@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/signup.css" />
+</head>
+
+<body>
+  <section>
+    <div class="imgBx">
+      <img src="../assets/images/collegeBG.png" />
+
+      <div class="quote">
+        <h2 class="text-quote">
+          Believe in yourself enough to be <br />different and do something
+          unique.
+        </h2>
+      </div>
+    </div>
+
+    <div class="contentBx">
+      <div class="formBx">
+        <h2>Sign Up</h2>
+        <form method="post" action="/signup">
+          <div class="inputBx">
+            <label for="name" class="label">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="row2">
+            <div class="inputBx" id="branch">
+              <label for="branch" class="label">Branch</label>
+              <select name="branch" id="branch" required>
+                <option disabled="disabled" selected="selected">
+                  Select Branch
+                </option>
+                <option value="MECHANICAL">Mechanical</option>
+                <option value="ELECTICAL">Electrical</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="ET&T">
+                  Electronics & Telecommunication
+                </option>
+                <option value="MINING">Mining</option>
+                <option value="CIVIL">Civil</option>
+              </select>
+            </div>
+            <div class="inputBx">
+              <label for="passoutYear" class="label">Passout Year</label>
+              <select name="passoutYear" id="passoutYear" required>
+                <option disabled="disabled" selected="selected">
+                  Select Year
+                </option>
+                >
+                <script>
+                  for (var i = new Date().getFullYear(); i >= 1968; i--) {
+                      document.write("<option value='" + i + "'> " + i + " </option>");
+                  }
+              </script>
+              </select>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="inputBx" id="country">
+              <label for="country" class="label">Country</label>
+              <input type="text" name="country" id="country" required />
+            </div>
+            <div class="inputBx">
+              <label for="state" class="label">State</label>
+              <input type="text" name="state" id="state" required />
+            </div>
+          </div>
+          <div class="inputBx">
+            <label for="city" class="label">City</label>
+            <input type="text" name="city" id="city" required />
+          </div>
+          <div class="inputBx">
+            <label for="phoneNumber" class="label">Mobile</label>
+            <input type="text" name="phoneNumber" id="phoneNumber" required />
+          </div>
+          <div class="inputBx">
+            <label for="email" class="label">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="inputBx">
+            <label for="password" class="label">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div class="inputBx">
+            <label for="confirm_password" class="label">Confirm Password</label>
+            <input type="password" id="confirm_password" required />
+          </div>
+
+          <div class="inputBx">
+            <input type="submit" value="Sign Up" name="" />
+          </div>
+
+          <div class="inputBx">
+            <p>Already have an account? <a href="/signin">Sign In</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    const password = document.getElementById("password");
+    const confirm_password = document.getElementById("confirm_password");
+    function validatePassword() {
+      if (password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity("");
+      }
+    }
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+  </script>
+</body>
+
+</html>

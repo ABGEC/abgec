@@ -1,0 +1,323 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --purple-light: rgba(121, 82, 179, 0.471);
+    --white: #ffffff;
+    --pink: #ff4584 ;
+    --purple: #7952b3;
+}
+
+.profile-body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    background-color: var(--purple);
+}
+
+.header {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 16px 10px 12px 0px var(--purple);
+    -webkit-box-shadow: 16px 10px 12px 0px rgba(72, 65, 65, 0.75);
+    -moz-box-shadow: 16px 10px 12px 0px rgba(72, 65, 65, 0.75);
+}
+
+.header img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0 20px;
+    border: 2px solid lightgray;
+}
+
+.header .userDetails {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.header .userDetails p {
+    margin: 5px 20px;
+    font-size: 1.3rem;
+}
+
+.header .userDetails #userName {
+    font-size: 3.5rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.userPersonalDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.userClgDetails {
+    display: flex;
+    flex-direction: row;
+}
+
+.userPersonalDetails p i {
+    margin-right: 10px;
+    color: black;
+}
+
+.social-media{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.social-media p a {
+    font-size: 1.8rem;
+    color: blue;
+    text-decoration: none;
+}
+
+.social-media-icons{
+    display: flex;
+}
+
+.edit-btn{
+    background-color: var(--purple);
+    color: white;
+    padding: 0.4rem ;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+
+}
+
+
+#userFb{
+    color: #4267B2;
+}
+#userLinkedIn{
+    color:#0077b5 ;
+}
+#userInsta{
+    color: #C13584;
+}
+#userTwitter{
+    color: #1DA1F2;
+}
+
+.Content-body {
+    margin-top: 1.4rem;
+    padding: 1rem;
+    /* background: rgba(100, 17, 17, 0.9); */
+    background-color: rgb(252, 243, 243);
+    box-shadow: 0 8px 32px 0 var(--purple);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* .heading-div{
+    background-color: lightgrey;
+    padding: 0;
+} */
+.heading {
+    display: block;
+    margin: 1rem 0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 3px solid var(--purple);
+    background-color: lightgrey;
+}
+
+.content {
+    font-size: 1.2rem;
+}
+
+.expirence-block {
+    margin: 1rem 0;
+}
+
+.organisation-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.organisation-matter {
+    font-size: 1.3rem;
+}
+
+.exp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-job {
+    background-color: lightgrey;
+}
+
+.side-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--pink);
+    color: white;
+    border: 0;
+    font-size: 1rem;
+}
+
+.add-btn{
+    margin-bottom: 1rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.job-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.job-tail {
+    display: flex;
+    align-items: flex-start;
+}
+
+.jobReq {
+    font-size: 1.2rem;
+}

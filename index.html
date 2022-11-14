@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--noscript tag -->
+  <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+  <!--Animate on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--Animate CSS link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!--Bootstrap 5.2.2 CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!--Google Fonts (Roboto & Lato)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Roboto:ital@0;1&display=swap"
+    rel="stylesheet" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+  <!--Main StyleSheet-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--Page title & icon-->
+  <title>ABGEC - Alumni of Bilaspur GEC</title>
+  <link rel="icon" href="./assets/images/abgecLogo/favicon.ico" type="image/icon">
+
+</head>
+
+<body>
+
+  <!--header-->
+  <header id="header">
+    <div class="logos">
+      <a class="logo-abgec" href="#"><img src="./assets/images/abgecwobg.png" alt="logo"></a>
+      <a class="logo-gecb" href="#"><img src="./assets/images/gecbwobg.png" alt="logo"></a>
+    </div>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a id="navbar-brand-abgec" class="navbar-brand" href="#"><img src="./assets/images/abgecwobg.png" alt="logo" width="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#aboutUs">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Alumni Council
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./assets/StrategicPlan.pdf" target="_blank">Strategy Plan</a></li>
+                <li><a class="dropdown-item" href="#">List of Alumni</a></li>
+                <li><a class="dropdown-item" href="#executive-team">Executive Team</a></li>
+                <li><a class="dropdown-item" href="#">Audit Report</a></li>
+                <li><a class="dropdown-item" href="#">Give</a></li>
+                <li><a class="dropdown-item" href="#testimonials">Testimonial</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Glimpses">Glimpses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Events">Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Join Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                <li><a class="dropdown-item" href="#">Sign In</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#footer">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn-profile">
+                <button class="myprofile">
+                  <i class="fa-solid fa-user"></i> 
+                  Profile</button>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn-profile">
+                <button class="myprofile">
+                  Sign out</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a id="navbar-brand-gecb" href="#"><img src="./assets/images/gecbwobg.png" alt="logo" width="50"></a>
+    </nav>
+  </header>
+  <!--header end-->
+
+  <!--home section-->
+  <section id="home">
+    <video autoplay muted loop id="homebg">
+      <source src="./assets/videos/homebg.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="homebgmobile">
+      <source src="./assets/videos/homebgmobile.mp4" type="video/mp4">
+    </video>
+  </section>
+  <!--home section end-->
+
+  <marquee id="marquee" class="container-fluid" scrollamount="12"
+      >   Registrations are open for Global Alumni Meet 2022.
+      <a id="marquee-link" href="./meet2022/index.html"
+        >Click here to register!</a
+      >
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         Registrations are open for Global Alumni Meet 2022.
+      <a id="marquee-link" href="./meet2022/index.html"
+        >Click here to register!</a
+      >
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         Registrations are open for Global Alumni Meet 2022.
+      <a id="marquee-link" href="./meet2022/index.html"
+        >Click here to register!</a
+      >
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         Registrations are open for Global Alumni Meet 2022.
+      <a id="marquee-link" href="./meet2022/index.html"
+        >Click here to register!</a
+      >
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         Registrations are open for Global Alumni Meet 2022.
+      <a id="marquee-link" href="./meet2022/index.html"
+        >Click here to register!</a
+      >
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+         Registrations are open for Global Alumni Meet 2022.
+      <a id="marquee-link" href="./meet2022/index.html"
+        >Click here to register!</a
+      >
+      </marquee
+    >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <!--main-->
+  <main id="main">
+
+    <!--About Us-->
+    <section class="about-us" id="aboutUs">
+      <div class="about-box">
+        <div class="text-about">
+          <div class="heading-about">
+            <h2 class="primary-heading">About Us</h2>
+          </div>
+          <p>
+            As the world comes together through this pandemic, it's time for us
+            to unite as well. Government Engineering College, Bilaspur is
+            providing an opportunity to...
+          </p>
+          <a href="./pages/about_msg.html"><button class="myBtn">Read more</button></a>
+        </div>
+        <div class="about-misvis">
+          
+          <div class="vision">
+            <div class="mission-heading">
+              <img src="./assets/images/vision.png" alt="">
+              <h2>Vision</h2>
+            </div>
+            <p>
+              To be a global leader by imparting quality technical education and innovative research for
+              the
+              betterment of the industry and society.
+            </p>
+          </div>
+          <div class="mission">
+            <div class="mission-heading">
+              <img src="./assets/images/mission.png" alt="">
+              <h2>Mission</h2>
+            </div>
+
+            <p>
+              Developing technical competencies to enhance employability and entrepreneurship.Promoting
+              research and consultancy activities to meet the need of industries. Inculcating ethical
+              values
+              and leadership qualities for sustainable development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About us end-->
+
+    <!--Executive Team-->
+    <section id="executive-team">
+
+      <div class="section-title">
+        <h2 class="primary-heading">EXECUTIVE TEAM</h2>
+      </div>
+
+      <div class="swiper mySwiper container1">
+        <div class="swiper-wrapper content ">
+          <!-- Slider - 1 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/tavindersingh.png" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94252-19490"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:tavinderpal@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Tavinderpal Singh Arora</span>
+                <span class="prof">President</span>
+                <span class="prof">1977 - Mech</span>
+                <span class="prof">Engineering Consultant</span>
+                <span class="prof">94252-19490</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 2 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/bschawla.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:bschawlamech@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Dr. Balbir Singh Chawla</span>
+                <span class="prof">Vice President</span>
+                <span class="prof">1981 - Mech</span>
+                <span class="prof">Principal GEC, Bilaspur</span>
+                <span class="prof">94241-44099</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 3 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/sudheergupta.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 99935-96555"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:sudheergupta5555@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Sudheer Gupta</span>
+                <span class="prof">Secretary</span>
+                <span class="prof">1982 - Civil</span>
+                <span class="prof">Retired Chief Engineer</span>
+                <span class="prof">99935-96555</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 4 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/rkagrawal.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Rajkumar Agrawal</span>
+                <span class="prof">Vice President</span>
+                <span class="prof">1977 - Mech</span>
+                <span class="prof">Director.</span>
+                <span class="prof">93003-21500</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 5 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/rkawasthi.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 98261-16738"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:rajani@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. R.K. Awasthi</span>
+                <span class="prof">Vice President</span>
+                <span class="prof">1979 - Elect</span>
+                <span class="prof">Retired Executive Director</span>
+                <span class="prof">98261-30163<span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 6 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/jyotirmayarya.png" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Jyotirmay Arya</span>
+                <span class="prof">Vice President</span>
+                <span class="prof">1979 - Mech</span>
+                <span class="prof">Managing Director</span>
+                <span class="prof">98261-44099</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 7 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/paramjeetsaluja.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Paramjeet Saluja</span>
+                <span class="prof">Treasurer</span>
+                <span class="prof">1988 - Mech</span>
+                <span class="prof">Entrepreneur</span>
+                <span class="prof">94252-20140</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 8 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/hsdhingra.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. H. S. Dhingra</span>
+                <span class="prof">Executive Member</span>
+                <span class="prof">1980 - Civil</span>
+                <span class="prof">Retired Chief Engineer</span>
+                <span class="prof">94255-30164</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 9 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/rkshivhare.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. R. K. Shivhare</span>
+                <span class="prof">Executive Member</span>
+                <span class="prof">1980 - Civil</span>
+                <span class="prof">Retired Executive Engineer</span>
+                <span class="prof">94252-23378</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 10 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/sanjaysharma.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Sanjay Sharma</span>
+                <span class="prof">Executive Member</span>
+                <span class="prof">1985 - Civil</span>
+                <span class="prof">Executive Engineer</span>
+                <span class="prof">94241-52590</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 11 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/abhijeetsinha.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Abhijit Sinha</span>
+                <span class="prof">Executive Member</span>
+                <span class="prof">1989 - Mech</span>
+                <span class="prof">Founder & MD, M/s Engineers Combine Infra </span>
+                <span class="prof">81305-55119</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 12 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/umeshshri.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Umesh Shrivastava</span>
+                <span class="prof">Executive Member</span>
+                <span class="prof">1992 - Mech</span>
+                <span class="prof">Head O & M Ultratech RMC</span>
+                <span class="prof">97020-18696</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 13 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/ravindra.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Ravindra Kumar</span>
+                <span class="prof">Executive Member</span>
+                <span class="prof">1992 - Min</span>
+                <span class="prof">Entrepreneur, Singapore</span>
+                <span class="prof">+65947-73668</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 14 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/gopalthakur.jpeg" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Gopal Singh Thakur</span>
+                <span class="prof">Executive Member</span>
+                <span class="prof">1992 - Civil</span>
+                <span class="prof">Executive Engineer</span>
+                <span class="prof">99935-96513</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider - 15 -->
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="./assets/images/team/anupamtiwari.png" />
+              </div>
+
+              <div class="media-icons">
+                <a href="tel: +91 94241-44099"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+
+              <div class="name-profession">
+                <span class="name">Er. Anupam Tiwari</span>
+                <span class="prof">Executive Member</span>
+                <span class="prof">1993 - Civil</span>
+                <span class="prof">Executive Engineer</span>
+                <span class="prof">99935-96615</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--<div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>-->
+    </section>
+    <!--Executive Team End-->
+
+    <!--Glimpses Section-->
+    <section class="Grid" id="Glimpses">
+      <div class="section-title">
+        <h2 class="primary-heading">GLIMPSES</h2>
+      </div>
+      <div class="Grid-row">
+        <a class="G_Card" onClick="openGallery(1)" id="card-1" href="./pages/gallery/alumni_gallery.html">
+          <div class="Card-thumb">
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-image" style="background-image: url(assets/images/gallery/alumnimeet.jpg)"></div>
+          </div>
+          <div class="Card-title"><span>Alumni Meet</span></div>
+          <div class="Card-explore"><span>Click on view more</span></div>
+          <button class="Card-button">View More</button>
+        </a>
+        <a class="G_Card" onClick="openGallery(2)" id="card-2" href="#">
+          <div class="Card-thumb">
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-image" style="background-image: url(assets/images/gallery/College_gallery.jpg)"></div>
+          </div>
+          <div class="Card-title"><span>College Gallery</span></div>
+          <div class="Card-explore"><span>Click on view more</span></div>
+          <button class="Card-button">view more</button>
+        </a><a class="G_Card" onClick="openGallery(3)" id="card-3" href="#">
+          <div class="Card-thumb">
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-image" style="background-image: url(assets/images/gallery/cultural_events.png)"></div>
+          </div>
+          <div class="Card-title"><span>Cultural Events</span></div>
+          <div class="Card-explore"><span>Click on view more</span></div>
+          <button class="Card-button">view more</button>
+        </a>
+      </div>
+      <div class="Grid-row">
+        <a class="G_Card" onClick="openGallery(4)" id="card-4" href="./pages/gallery/nss_gallery.html">
+          <div class="Card-thumb">
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-image" style="background-image: url(assets/images/gallery/nss_events.jpg)"></div>
+          </div>
+          <div class="Card-title"><span>NSS Events</span></div>
+          <div class="Card-explore"><span>Click on view more</span></div>
+          <button class="Card-button">view more</button>
+        </a><a class="G_Card" onClick="openGallery(5)" id="card-5" href="./pages/gallery/literary_club.html">
+          <div class="Card-thumb">
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-image" style="background-image: url(assets/images/gallery/literary.jpg)"></div>
+          </div>
+          <div class="Card-title"><span>Literary Club (DARPAN)</span></div>
+          <div class="Card-explore"><span>Click on view more</span></div>
+          <button class="Card-button">view more</button>
+        </a><a class="G_Card" onClick="openGallery(6)" id="card-6" href="#">
+          <div class="Card-thumb">
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-image" style="background-image: url(assets/images/gallery/technical.jpg)"></div>
+          </div>
+          <div class="Card-title"><span>Technical Events</span></div>
+          <div class="Card-explore"><span>Click on view more</span></div>
+          <button class="Card-button">view more</button>
+        </a>
+      </div>
+      <div class="Grid-row">
+        <a class="G_Card" onClick="openGallery(7)" href="#" id="card-7">
+          <div class="Card-thumb">
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-shadow"></div>
+            <div class="Card-image" style="background-image: url(assets/images/gallery/sports.jpg)"></div>
+          </div>
+          <div class="Card-title"><span>Sports Events</span></div>
+          <div class="Card-explore"><span>Click on view more</span></div>
+          <button class="Card-button">view more</button>
+        </a>
+      </div>
+    </section>
+    <!--Glimpses End-->
+
+    <!--Events-->
+    <section class="container2" id="Events">
+      <div class="section-title">
+        <h2 class="primary-heading">EVENTS</h2>
+      </div>
+
+      <div class="event-container">
+        <div class="event-main">
+          <div class="event-img">
+            <img src="./assets/images/GLOBAL (15).png" alt="GLOBAL ALUMNI MEET 2022" />
+          </div>
+
+          <div class="event-info">
+            <marquee class="event-marquee">UPCOMING EVENT!!</marquee>
+            <h2 class="event-date">
+              10<sup>th</sup>, 11<sup>th</sup> Dec 2022
+            </h2>
+
+            <span class="event-location"><i class="fa-solid fa-location-dot"></i>
+              <span>GEC, Bilaspur Campus</span></span>
+
+            <p class="event-para">
+              It's time to look and reminisce on days when all seemed bright
+              & clear. Let us celebrate all that was & all that is ...
+            </p>
+            <button class="details-button">
+              <a href="./meet2022/index.html">Veiw Details</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+      <!-- ===========================PAST EVENT===================== -->
+      <div class="section-title">
+        <h2 class="primary-heading">PAST EVENTS</h2>
+      </div>
+      <div class="container-rotate">
+        <div id="carousel">
+
+          <!-- 1 -->
+
+          <div>
+            <div class="past-event-info">
+              <div class="event-name">
+                <h2>
+                  Induction Program
+                </h2>
+              </div>
+              <h2 class="past-event-date">
+                <i class="fa-regular fa-calendar-days"></i>
+                10<sup>th</sup>-21<sup>th</sup> Oct 2022
+              </h2>
+
+              <span class="past-event-location"><i class="fa-solid fa-location-dot"></i>
+                <span>GEC, Bilaspur Campus</span></span>
+              <br>
+
+              <p class="past-event-para">
+                “Dreams don't work unless you do.”
+              </p>
+
+              <button class="details-button">
+                <a href="#">View Glimpses</a>
+              </button>
+            </div>
+          </div>
+
+
+          <!-- 2 -->
+          <div>
+            <div class="past-event-info">
+              <div class="event-name">
+                <h2>
+                  Engineer's Day
+                </h2>
+              </div>
+              <h2 class="past-event-date">
+                <i class="fa-regular fa-calendar-days"></i>
+                15<sup>th</sup> Sep 2022
+              </h2>
+
+              <span class="past-event-location"><i class="fa-solid fa-location-dot"></i>
+                <span>GEC, Bilaspur Campus</span></span>
+              <br>
+
+              <p class="past-event-para">
+                “Engineers turn dreams into reality.”
+              </p>
+
+              <button class="details-button">
+                <a href="#">View Glimpses</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- 3 -->
+
+          <div>
+            <div class="past-event-info">
+              <div class="event-name">
+                <h2>
+                  Alumni Weekend
+                </h2>
+              </div>
+              <h2 class="past-event-date">
+                <i class="fa-regular fa-calendar-days"></i>
+                --<sup>th</sup> --- ----
+              </h2>
+
+              <span class="past-event-location"><i class="fa-solid fa-location-dot"></i>
+                <span>GEC, Bilaspur Campus</span></span>
+              <br>
+
+              <p class="past-event-para">
+                "Gatherings are refreshing, and they give meaning to life."
+              </p>
+
+              <button class="details-button">
+                <a href="#">View Glimpses</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- 4 -->
+
+          <div>
+            <div class="past-event-info">
+              <div class="event-name">
+                <h2>
+                  NSS -Tree plantation
+                </h2>
+              </div>
+              <h2 class="past-event-date">
+                <i class="fa-regular fa-calendar-days"></i>
+                --<sup>--</sup> --- ----
+              </h2>
+
+              <span class="past-event-location"><i class="fa-solid fa-location-dot"></i>
+                <span>GEC, Bilaspur Campus</span></span>
+              <br>
+
+              <p class="past-event-para">
+                "If you save a tree, you save a life."
+              </p>
+
+              <button class="details-button">
+                <a href="#">View Glimpses</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- 5 -->
+
+          <div>
+            <div class="past-event-info">
+              <div class="event-name">
+                <h2>
+                  Alumni Weekend
+                </h2>
+              </div>
+              <h2 class="past-event-date">
+                <i class="fa-regular fa-calendar-days"></i>
+                --<sup>--</sup> --- ----
+              </h2>
+
+              <span class="past-event-location"><i class="fa-solid fa-location-dot"></i>
+                <span>GEC, Bilaspur Campus</span></span>
+              <br>
+
+              <p class="past-event-para">
+                “Engineers turn dreams into reality.”
+              </p>
+
+              <button class="details-button">
+                <a href="#">View Glimpses</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- 6  -->
+
+          <div>
+            <div class="past-event-info">
+              <div class="event-name">
+                <h2>
+                  Alumni Meet
+                </h2>
+              </div>
+              <h2 class="past-event-date">
+                <i class="fa-regular fa-calendar-days"></i>
+                11<sup>th</sup>, 12<sup>th</sup> Apr 2015
+              </h2>
+
+              <span class="past-event-location"><i class="fa-solid fa-location-dot"></i>
+                <span>GEC, Bilaspur Campus</span></span>
+              <br>
+
+              <p class="past-event-para">
+                “We do not remember days; we remember moments.”
+              </p>
+
+              <button class="details-button">
+                <a href="#">View Glimpses</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- 7 -->
+
+          <div>
+            <div class="past-event-info">
+              <div class="event-name">
+                <h2>
+                  Alumni Meet
+                </h2>
+              </div>
+              <h2 class="past-event-date">
+                <i class="fa-regular fa-calendar-days"></i>
+                28<sup>th</sup> Dec 2008
+              </h2>
+
+              <span class="past-event-location"><i class="fa-solid fa-location-dot"></i>
+                <span>GEC, Bilaspur Campus</span></span>
+              <br>
+
+              <p class="past-event-para">
+                “Things end but memory lasts forever.”
+              </p>
+
+              <button class="details-button">
+                <a href="#">View Glimpses</a>
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+    <!--Events end-->
+
+    <div class="wrapper" id="testimonials">
+
+      <!-- TESTIMONIAL SECTION ----------------------------------------------------------------------------->
+      <!-- <div class="section-title">
+        <h2 class="style-head-main">TESTIMONIALS</h2>
+      </div>
+      <div class="cols">
+
+        <!-- member 1  -->
+        <!-- <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(./dummy.png)">
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae
+                  suscipit c.</p>
+              </div>
+            </div>
+            <div class="details">
+              <div class="details-inner">
+                <p>Name</p>
+                <p>Branch - year</p>
+                <p>Organization</p>
+                <p>Designation</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- end memer 1 -->
+
+
+        <!-- member 2 -->
+        <!-- <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(./dummy.png)">
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae
+                  suscipit c.</p>
+              </div>
+            </div>
+
+            <div class="details">
+              <div class="details-inner">
+                <p>Name</p>
+                <p>Branch - year</p>
+                <p>Organization</p>
+                <p>Designation</p>
+              </div>
+            </div>
+
+          </div>
+        </div> -->
+        <!-- end member 2 -->
+
+        <!-- member 3 -->
+        <!-- <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(./dummy.png)">
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae
+                  suscipit c.</p>
+              </div>
+            </div>
+
+            <div class="details">
+              <div class="details-inner">
+                <p>Name</p>
+                <p>Branch - year</p>
+                <p>Organization</p>
+                <p>Designation</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- end member 3 -->
+
+      <!-- </div>  --> 
+      <!-- end testimonial -->
+
+     <!-- <div class="member-count">
+
+        <div class="three">
+          <div class="three_one"><b><span
+                style="color:#fff ;text-align: center; font-size: 30px; margin-top: 100px">Total </span><span
+                style="color:#fff ;text-align: center; font-size: 30px; margin-top: 100px">Alumni</span></b></div>
+          <div class="three_two"><b><span
+                style="color:#fff ;text-align: center; font-size: 30px; margin-top: 100px">Total </span><span
+                style="color:#fff ;text-align: center; font-size: 30px; margin-top: 100px">Alumni </span><span
+                style="color:#fff ;text-align: center; font-size: 30px; margin-top: 100px">Registered </span></b></div>
+          <div class="three_three"><b><span
+                style="color:#fff ;text-align: center; font-size: 30px; margin-top: 100px">Sin</span><span
+                style="color:#fff ;text-align: center; font-size: 30px; margin-top: 100px">ce</span></b></div>
+        </div>
+
+        <div class="four">
+          <div class="three_one">
+            <h2 class="timer count-title count-number" data-to="300" data-speed="1500"></h2>
+          </div>
+          <div class="three_two">
+            <h2 class="timer count-title count-number" data-to="300000" data-speed="1500"></h2>
+          </div>
+          <div class="three_three">
+            <h2 class="timer count-title count-number" data-to="1964" data-speed="1500"></h2>
+          </div>
+        </div>
+
+      </div>-->
+    </div> 
+    <!-- end wrapper -->
+   
+  </main>
+  <!--main end-->
+
+  <!--Footer Starts-->
+  <footer class="footer" id="footer">
+    <!--Contact us Text-->
+
+    <div class="contact">
+      <div class="section-title">
+        <h2 class="primary-heading">CONTACT US</h2>
+      </div>
+
+      <div class="address">
+        <h4>Office Address:</h4>
+        <p>Near Luthra Hospital, Nehru Nagar</p>
+        <p><strong>Bilaspur, 495001 (C.G.)</strong></p>
+        <p><strong>Email Id: </strong><a href="mailto:abgecbilaspur@gmail.com"
+            style="color: #000;">abgecbilaspur@gmail.com</a></p>
+        <p><strong>ABGEC Website: </strong><a href="./meet2022/index.html" target="_blank"
+            style="color: #000;">www.abgec.in</a>
+        </p>
+        <p><strong>GEC Bilaspur Website: </strong><a href="https://gecbsp.ac.in/" target="_blank"
+            style="color: #000;">www.gecbsp.ac.in</a></p>
+      </div>
+
+      <div class="social-media-links">
+        <a href="https://www.facebook.com/gecbofficial" target="_blank"> <i class="fa fa-facebook social-media"></i>
+        </a>
+        <a href="mailto:abgecbilaspur@gmail.com" target="_blank"> <i class="fa fa-envelope social-media"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/government-engineering-college-bilaspur/?originalSubdomain=in"
+          target="_blank"> <i class="fa fa-linkedin social-media"></i> </a>
+        <a href="https://twitter.com/nssgecbsp?t=_jBUIV9aakGGyaxGqu7YHw&s=08" target="_blank"> <i
+            class="fa fa-twitter social-media"></i></a>
+        <a href="https://youtube.com/c/GECBILASPUROFFICIAL" target="_blank"> <i class="fa fa-youtube social-media"></i>
+        </a>
+        <a href="https://www.google.com/maps/place/Government+Engineering+College,+Koni,+Bilaspur/@22.1367028,82.1279231,17z/data=!3m1!4b1!4m5!3m4!1s0x3a280bf8dea4bc07:0x8bd676cd9b08051a!8m2!3d22.1367028!4d82.1301118"
+          target="_blank">
+          <i class="fa fa-map-marker social-media"></i> </a>
+      </div>
+      <p class="copyright">Copyright <strong>ABGEC</strong>. All Rights Reserved</p>
+    </div>
+
+    <!--contact us ends-->
+
+    <!--map-->
+    <div class="map">
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+            marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=499&amp;height=367&amp;hl=en&amp;q=gec bilaspur&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+            href="https://piratebay-proxys.com/">Pirate bay proxy</a></div>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            width: 100%;
+            height: 367px;
+          }
+
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            width: 100%;
+            height: 367px;
+          }
+
+          .gmap_iframe {
+            height: 367px !important;
+          }
+        </style>
+      </div>
+    </div>
+    <!--map end-->
+  </footer>
+
+  <!--Bootstrap 5.2.2 JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <!--INITIALIZE AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!--jquery easing file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>-->
+
+  <!--Main JS-->
+  <script src="./assets/scripts/team.js"></script>
+  <script src="./assets/scripts/main.js"></script>
+  <script src="./assets/scripts/glimpses.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
