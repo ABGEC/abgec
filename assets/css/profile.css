@@ -132,7 +132,7 @@ table {
 :root {
     --purple-light: rgba(121, 82, 179, 0.471);
     --white: #ffffff;
-    --pink: #ff4584 ;
+    --pink: #ff4584;
     --purple: #7952b3;
 }
 
@@ -196,13 +196,13 @@ table {
     color: black;
 }
 
-.social-media{
+.social-media {
     margin-top: 1rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+}
 
 .social-media p a {
     font-size: 1.8rem;
@@ -210,30 +210,33 @@ table {
     text-decoration: none;
 }
 
-.social-media-icons{
+.social-media-icons {
     display: flex;
 }
 
-.edit-btn{
+.edit-btn {
     background-color: var(--purple);
     color: white;
-    padding: 0.4rem ;
+    padding: 0.4rem;
     text-decoration: none;
     padding: 0.4rem 0.8rem;
 
 }
 
 
-#userFb{
+#userFb {
     color: #4267B2;
 }
-#userLinkedIn{
-    color:#0077b5 ;
+
+#userLinkedIn {
+    color: #0077b5;
 }
-#userInsta{
+
+#userInsta {
     color: #C13584;
 }
-#userTwitter{
+
+#userTwitter {
     color: #1DA1F2;
 }
 
@@ -248,6 +251,7 @@ table {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 /* .heading-div{
     background-color: lightgrey;
     padding: 0;
@@ -296,7 +300,7 @@ table {
     font-size: 1rem;
 }
 
-.add-btn{
+.add-btn {
     margin-bottom: 1rem;
 }
 

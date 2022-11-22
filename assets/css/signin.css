@@ -13,6 +13,7 @@ section {
   height: 100vh;
   display: flex;
 }
+
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
@@ -124,7 +125,7 @@ section {
   color: #023047 !important;
 }
 
-.nav-item .myprofile{
+.nav-item .myprofile {
   color: white;
   font-weight: 600;
   background-color: #ff4584;
@@ -134,8 +135,9 @@ section {
   margin: 0.2rem;
 }
 
-.nav-item .myprofile:hover{
-  background-image: linear-gradient( rgb(94, 26, 154), rgb(255, 105, 255));;
+.nav-item .myprofile:hover {
+  background-image: linear-gradient(rgb(94, 26, 154), rgb(255, 105, 255));
+  ;
   box-shadow: 5px 5px 5px rgb(74, 73, 73);
 }
 
@@ -182,7 +184,7 @@ section .imgBx img {
   object-fit: cover;
 }
 
-section .imgBx .quote{
+section .imgBx .quote {
   position: absolute;
   z-index: 1;
   text-align: center;
@@ -316,9 +318,10 @@ section .contentBx .formBx .sci li:hover {
 /* *************************Resonsive******************************** */
 
 @media (max-width: 768px) {
-  section{
+  section {
     height: auto;
   }
+
   section .imgBx {
     position: absolute;
     top: 0;
@@ -327,7 +330,7 @@ section .contentBx .formBx .sci li:hover {
     height: 100%;
   }
 
-  section .contentBx{
+  section .contentBx {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,30 +339,31 @@ section .contentBx .formBx .sci li:hover {
     z-index: 1;
   }
 
-  section .contentBx .formBx{
+  section .contentBx .formBx {
     width: 100%;
     padding: 2.5rem;
     background: #fff;
     margin: 3rem;
     opacity: 70%;
   }
-  .quote h2{
+
+  .quote h2 {
     display: none;
   }
 
 
   section .contentBx .formBx h2 {
     color: #4f0cb3;
-  
+
   }
-  
+
 
   section .contentBx .formBx .inputBx input[type="submit"] {
     background: #4f0cb3;
     color: #fff;
-  
+
   }
-  
+
   section .contentBx .formBx .inputBx input[type="submit"]:hover {
     background: #6b28cf;
   }

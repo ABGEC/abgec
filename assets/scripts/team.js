@@ -1,5 +1,4 @@
-
-const swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper(".mySwiper", {
   // Default parameters
 
   spaceBetween: 100,
@@ -8,33 +7,33 @@ const swiper = new Swiper('.mySwiper', {
   // Responsive breakpoints
 
   speed: 600,
-      loop: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
     // when window width is >= 480px
     480: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     // when window width is >= 640px
     640: {
       slidesPerView: 4,
-      spaceBetween: 40
+      spaceBetween: 40,
     },
 
     1200: {
       slidesPerView: 3,
       spaceBetween: 15,
-    }
-  }
+    },
+  },
 });
 
 (function ($) {

@@ -1,8 +1,8 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -76,7 +76,7 @@ body{
 }
 
 
-.nav-item .myprofile{
+.nav-item .myprofile {
   color: white;
   font-weight: 600;
   background-color: #ff4584;
@@ -86,8 +86,9 @@ body{
   margin: 0.2rem;
 }
 
-.nav-item .myprofile:hover{
-  background-image: linear-gradient( rgb(94, 26, 154), rgb(255, 105, 255));;
+.nav-item .myprofile:hover {
+  background-image: linear-gradient(rgb(94, 26, 154), rgb(255, 105, 255));
+  ;
   box-shadow: 5px 5px 5px rgb(74, 73, 73);
 }
 
@@ -108,89 +109,89 @@ body{
 /* -------------nav end --------------- */
 
 .about-text {
-    width: 100%;
-    text-align: justify;
-    padding: 2rem;
-    /* font-weight: 500; */
+  width: 100%;
+  text-align: justify;
+  padding: 2rem;
+  /* font-weight: 500; */
 }
 
-.section-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .style-head-main{
-    font-size: 2.8rem;
-    font-weight: bold;
-    position: relative;
-    color: transparent;
-    background-image: url("../images/gif.webp");
-    margin-bottom: 0.6em;
-    margin-top: 1em;
-    background-position: center;
-    -webkit-background-clip:text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    background-clip: text;
-  }
-  
-  
-  .style-head-main:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100px;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-  }
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-.about-text p{
-    font-size: 1.3rem ;
-    /* letter-spacing: 0.1rem; */
-    line-height: 1.9rem;
-    font-family: 'Lato', sans-serif;
+.style-head-main {
+  font-size: 2.8rem;
+  font-weight: bold;
+  position: relative;
+  color: transparent;
+  background-image: url("../images/gif.webp");
+  margin-bottom: 0.6em;
+  margin-top: 1em;
+  background-position: center;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
 }
 
 
-.message-president, .message-principal , .message-secretary{
-    padding:3% 3%;
-    background-color:  #EAEAEA;
-    margin:3% 0;
-}
-
-#message .message-head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.message-head{
-    font-weight: 700;
-    font-size: 40px;
-    color: #7952b3;
-}
-
-.message-image{
-    width:200px;
-    height:220px;
-    margin-top:2%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    margin-right:2% ;
-    border: 0.6rem solid #7952b3;/*#fb8500*/
-    border-radius: 100%;
-    float: left;
+.style-head-main:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
 }
 
 
+.about-text p {
+  font-size: 1.3rem;
+  /* letter-spacing: 0.1rem; */
+  line-height: 1.9rem;
+  font-family: 'Lato', sans-serif;
+}
 
-.message-content{
-    text-align: justify;
-    padding-left: 1%;
+
+.message-president,
+.message-principal,
+.message-secretary {
+  padding: 3% 3%;
+  background-color: #EAEAEA;
+  margin: 3% 0;
+}
+
+#message .message-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-head {
+  font-weight: 700;
+  font-size: 40px;
+  color: #7952b3;
+}
+
+.message-image {
+  width: 200px;
+  height: 220px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 2%;
+  border: 0.6rem solid #7952b3;
+  /*#fb8500*/
+  border-radius: 100%;
+  float: left;
 }
 
 
 
+.message-content {
+  text-align: justify;
+  padding-left: 1%;
+}
