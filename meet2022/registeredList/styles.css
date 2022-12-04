@@ -1,0 +1,40 @@
+
+.list-attendee{
+    padding:2%  3%  5%;
+    background-color:  #EAEAEA;
+    /* background-image: linear-gradient( rgb(255, 105, 255),rgb(94, 26, 154) );; */
+    margin:2% 4%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+}
+
+
+.attendee-image{
+    width:125px;
+    height:140px;
+    /* margin-top:0; */
+    margin-bottom: 1%;
+    margin-left: 0;
+    margin-right:2% ;
+    border: 0.4rem solid rgb(94, 26, 154);
+    border-radius: 100%;
+    float: left;
+}
+/* #7952b3 */
+
+
+.attendee-details{
+    text-align: justify;
+    padding-left: 1%;
+}
+
+.attendee-details h3{
+    color: rgb(94, 26, 154);
+    font-weight: bold;
+}
+
+.attendee-details p{
+    color:rgb(94, 26, 154);
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}

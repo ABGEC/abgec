@@ -297,3 +297,8 @@ main {
 .screenshot {
     color: red;
 }
+
+.reg-list {
+    font-weight: bold;
+    text-align: center;
+}
