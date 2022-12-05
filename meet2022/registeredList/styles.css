@@ -1,3 +1,12 @@
+.batch-head {
+    text-align: center;
+    margin: 3% 4%;
+    padding: 0.3em;
+    background-color: #EAEAEA;
+    color: rgb(94, 26, 154);
+    border-radius: 0.5em;
+}
+
 .list-attendee {
     padding: 3% 3% 5%;
     background-color: #EAEAEA;
