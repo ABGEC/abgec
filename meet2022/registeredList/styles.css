@@ -1,9 +1,12 @@
+body{
+    background-color: rgb(194, 160, 224);
+}
 .batch-head {
     text-align: center;
     margin: 3% 4%;
     padding: 0.3em;
-    background-color: #EAEAEA;
-    color: rgb(94, 26, 154);
+    background-color: rgb(94, 26, 154);
+    color: #fff;
     border-radius: 0.5em;
 }
 
