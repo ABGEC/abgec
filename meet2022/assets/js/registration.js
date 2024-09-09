@@ -171,7 +171,7 @@ function EnableDisable(amountPaid) {
 // *************************************************
 
 /*PageClip function to uplaod data in database*/
-var form = document.querySelector(".pageclip-form");
+/*var form = document.querySelector(".pageclip-form");
 Pageclip.form(form, {
   onSubmit: function (event) {},
   onResponse: function (error, response) {
@@ -179,45 +179,45 @@ Pageclip.form(form, {
   },
   successTemplate: "<span>Thank you!</span>",
 });
-
+*/
 /*Display popup after form submission*/
-function submitForm() {
-  var myModal = new bootstrap.Modal(
-    document.getElementById("exampleModal"),
-    {}
-  );
-  myModal.toggle();
-}
+// function submitForm() {
+//   var myModal = new bootstrap.Modal(
+//     document.getElementById("exampleModal"),
+//     {}
+//   );
+//   myModal.toggle();
+// }
 
-/*function checkMode(val) {
-  const country = document.getElementById("country").value;
-  localStorage.setItem("attending-mode", val);
-  var element = document.getElementById("details");
-  var next_btn = document.getElementById("next-btn");
-  var regButton = document.querySelector(".register-btn");
-  var payment_virtual = document.getElementById("payment-virtual");
-  var transaction_input = document.getElementById("transaction-input");
-  var payment_physical = document.getElementById("payment-physical");
-  var payment_virtual_india = document.getElementById("payment-virtual-india");
-  if (val == "virtual" && country != "India") {
-    element.style.display = "none";
-    next_btn.style.display = "none";
-    payment_virtual.style.display = "block";
-    payment_physical.style.display = "none";
-    transaction_input.style.display = "none";
-    regButton.disabled = false;
-    payment_virtual_india.style.display = "none";
-  } else if (val == "virtual" && country == "India") {
-    payment_virtual_india.style.display = "block";
-    element.style.display = "none";
-    payment_physical.style.display = "none";
-    document.getElementById("next-btn").style.display = "none";
-    EnableDisable(3000);
-  } else {
-    element.style.display = "block";
-    next_btn.style.display = "block";
-    payment_virtual.style.display = "none";
-    payment_virtual_india.style.display = "none";
-    transaction_input.style.display = "block";
-  }
-}*/
+// function checkMode(val) {
+//   const country = document.getElementById("country").value;
+//   localStorage.setItem("attending-mode", val);
+//   var element = document.getElementById("details");
+//   var next_btn = document.getElementById("next-btn");
+//   var regButton = document.querySelector(".register-btn");
+//   var payment_virtual = document.getElementById("payment-virtual");
+//   var transaction_input = document.getElementById("transaction-input");
+//   var payment_physical = document.getElementById("payment-physical");
+//   var payment_virtual_india = document.getElementById("payment-virtual-india");
+//   if (val == "virtual" && country != "India") {
+//     element.style.display = "none";
+//     next_btn.style.display = "none";
+//     payment_virtual.style.display = "block";
+//     payment_physical.style.display = "none";
+//     transaction_input.style.display = "none";
+//     regButton.disabled = false;
+//     payment_virtual_india.style.display = "none";
+//   } else if (val == "virtual" && country == "India") {
+//     payment_virtual_india.style.display = "block";
+//     element.style.display = "none";
+//     payment_physical.style.display = "none";
+//     document.getElementById("next-btn").style.display = "none";
+//     EnableDisable(3000);
+//   } else {
+//     element.style.display = "block";
+//     next_btn.style.display = "block";
+//     payment_virtual.style.display = "none";
+//     payment_virtual_india.style.display = "none";
+//     transaction_input.style.display = "block";
+//   }
+// }

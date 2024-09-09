@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./assets/css/registration.css" />
 
     <!--pageclip-->
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <!--<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">-->
 
 
     <script type="text/javascript">
@@ -42,18 +42,18 @@
             <!--header details-->
             <div class="header-background">
                 <div>
-                    <h1 class="main-heading">Global Alumni Meet 2022</h1>
+                    <h1 class="main-heading">Global Alumni Meet 2024</h1>
 
                     <h3 class="heading-des-college">Alumni of Bilaspur Government Engineering College (ABGEC)</h3>
 
                     <h3 class="heading-des1">
                         (1<sup>st</sup> batch <strong>1969</strong> to
-                        <strong>2015</strong> passout)
+                        <strong>2017</strong> passout)
                     </h3>
 
                     <h3 class="heading-des2">
-                        On <strong>10</strong><sup>th</sup> & <strong>11</strong><sup>th</sup>
-                        <strong>December 2022</strong>
+                        On <strong>21</strong><sup>st</sup> & <strong>22</strong><sup>nd</sup>
+                        <strong>December 2024</strong>
                     </h3>
 
                     <h3 class="heading-des3">Venue: <strong>GEC Bilaspur Campus</strong></h3>
@@ -68,8 +68,8 @@
                     <div class="links">
                         <a href="mailto:abgecbilaspur@gmail.com">Email:
                             abgecbilaspur@gmail.com</a>&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <a href="https://www.abgec.in">Website: www.abgec.in</a>
-
+                        <a href="https://www.abgec.in">Website: www.abgec.in</a><br>
+                        <p style="color: yellow;">NOTE: Timing for Registration is 9:30 AM to 5:00 PM Next Day (Concluding)</p>
                     </div>
                 </div>
 
@@ -104,22 +104,19 @@
 
     <main class="justify-content-center container">
 
-        <form action="https://send.pageclip.co/ZQ0aVLjeN7mowSQlcMux4ir2nNWQ8FRV/ABGEC" class="pageclip-form"
-            method="post">
+        <form id="uploadForm">
 
             <!-- personal details -->
             <div class="details">
                 <h3>Personal Details</h3>
 
                 <li class="note-style">Fill your personal details, and decide the number of participants attending the
-                    <b>Global Alumni Meet 2022</b>.
+                    <b>Global Alumni Meet 2024</b>.
                 </li>
 
                 <!--image upload-->
                 <div class="embed-responsive embed-responsive-16by9 m-1">
-                    <iframe class="embed-responsive-item"
-                        src="https://script.google.com/macros/s/AKfycbwqL0akfoYefvtsERUWuPckM9-9uxBR9hvR8IwX0-JWb8b14DrRV7YyAfyZ1Q5d6Dgp/exec"
-                        scrolling="no" height="172" width="100%" frameBorder="0" allowfullscreen></iframe>
+                    <input type="file" accept="image/*" required><br>
                 </div>
                 <!--image upload end-->
 
@@ -128,7 +125,7 @@
                     <div class="col-md">
                         <label for="floatingInputGrid">(Mr./Mrs./Ms./Prof./Dr./Er.)</label>
                         <div class="form-floating">
-                            <select class="form-select" id="name-title" name="name-title" required>
+                            <select class="form-select" id="name-title" name="title" required>
                                 <option value="">Select a Title</option>
                                 <option value="Mr.">Mr.</option>
                                 <option value="Mrs.">Mrs.</option>
@@ -170,11 +167,11 @@
                     <div class="col-md year">
                         <label for="floatingInputGrid">Passout year</label>
                         <div class="form-floating">
-                            <select class="form-select" id="year" name="year" aria-label="Floating label select example"
+                            <select class="form-select" id="year" name="passoutYear" aria-label="Floating label select example"
                                 required>
                                 <option value="">Select Passout year</option>
                                 <script>
-                                    for (var i = 2015; i > 1968; i--) {
+                                    for (var i = 2017; i > 1968; i--) {
                                         document.write("<option value='" + i + "'> " + i + " </option>");
                                     }
                                 </script>
@@ -186,7 +183,7 @@
                     <div class="col-md year">
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
-                            <input class="form-control" data-date-format="dd/mm/yyyy" id="datepicker" name="birthDate"
+                            <input class="form-control" data-date-format="dd/mm/yyyy" id="datepicker" name="dob"
                                 required>
                         </div>
                     </div>
@@ -212,7 +209,7 @@
                         <label for="floatingSelectGrid">Marriage Anniversary (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="datepicker2"
-                                name="MarriageAnniversary">
+                                name="marriageAnniversary">
                         </div>
                     </div>
 
@@ -532,7 +529,7 @@
                     <div class="col-md organisation">
                         <label for="floatingInputGrid">Pincode</label>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="pincode" name="pincode" required />
+                            <input type="text" class="form-control" id="pincode" name="pinCode" required />
                         </div>
                     </div>
                 </div>
@@ -559,7 +556,7 @@
                     <div class="col-md organisation">
                         <label for="floatingInputGrid">Current Holding Position (Designation)</label>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="desg" name="Designation" />
+                            <input type="text" class="form-control" id="desg" name="designation" />
                         </div>
                     </div>
                 </div>
@@ -568,13 +565,13 @@
                     <div class="col-md organisation">
                         <label for="floatingInputGrid">Organisation</label>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="Organisation" name="Organisation" />
+                            <input type="text" class="form-control" id="Organisation" name="organisation" />
                         </div>
                     </div>
                     <div class="col-md organisation">
                         <label class="form-label" for="textAreaExample">Career Track Path</label>
                         <div class="form-floating">
-                            <textarea class="form-control" name="CareerTrackPath" id="textAreaExample1"
+                            <textarea class="form-control" name="careerTrackPath" id="textAreaExample1"
                                 rows="3"></textarea>
                         </div>
                     </div>
@@ -603,7 +600,7 @@
 
             <!--mode of attending the meeting (onclick="checkMode(this.value);")-->
             <div class="attending-mode" id="attending-mode">
-                <h3>Mode of attending the global alumni meet 2022</h3>
+                <h3>Mode of attending the global alumni meet 2024</h3>
                 <div class="mode-options">
                     <input type="radio" id="mode-physical" name="mode" value="physical"
                         onclick="checkMode(this.value);">
@@ -617,19 +614,19 @@
 
             <!-- member attending details -->
             <div class="details" id="details">
-                <h3>Details of members attending Global Alumni Meet 2022 (Excluding You)</h3>
+                <h3>Details of members attending Global Alumni Meet 2024 (Excluding You)</h3>
 
                 <div class="row g-2">
                     <div class="col-md organisation">
                         <label for="member-one-name">Name</label>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="member-one-name" name="member-one-name" />
+                            <input type="text" class="form-control" id="member-one-name" name="memberOneName" />
                         </div>
                     </div>
                     <div class="col-md year">
                         <label for="member-one-relation">Relation</label>
                         <div class="form-floating">
-                            <select class="form-select" id="member-one-relation" name="member-one-relation"
+                            <select class="form-select" id="member-one-relation" name="memberOneRelation"
                                 aria-label="Floating label select example" onchange='CheckRelation(this.value,"age1");'>
                                 <option value=""></option>
                                 <option value="Spouse">Spouse</option>
@@ -642,7 +639,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-one-age"
-                                name="member-one-age">
+                                name="memberOneAge">
                         </div>
                     </div>
                 </div>
@@ -651,13 +648,13 @@
                     <div class="col-md organisation">
                         <label for="member-two-name">Name</label>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="member-two-name" name="member-two-name" />
+                            <input type="text" class="form-control" id="member-two-name" name="memberTwoName" />
                         </div>
                     </div>
                     <div class="col-md year">
                         <label for="member-two-relation">Relation</label>
                         <div class="form-floating">
-                            <select class="form-select" id="member-two-relation" name="member-two-relation"
+                            <select class="form-select" id="member-two-relation" name="memberTwoRelation"
                                 aria-label="Floating label select example" onchange='CheckRelation(this.value,"age2");'>
                                 <option selecteotiontion>
                                 <option value="Spouse">Spouse</option>
@@ -670,7 +667,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-two-age"
-                                name="member-two-age">
+                                name="memberTwoAge">
                         </div>
                     </div>
                 </div>
@@ -679,13 +676,13 @@
                     <div class="col-md organisation">
                         <label for="member-three-name">Name</label>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="member-three-name" name="member-three-name" />
+                            <input type="text" class="form-control" id="member-three-name" name="memberThreeName" />
                         </div>
                     </div>
                     <div class="col-md year">
                         <label for="member-three-relation">Relation</label>
                         <div class="form-floating">
-                            <select class="form-select" id="member-three-relation" name="member-three-relation"
+                            <select class="form-select" id="member-three-relation" name="memberThreeRelation"
                                 aria-label="Floating label select example" onchange='CheckRelation(this.value,"age3");'>
                                 <option value=""></option>
                                 <option value="Spouse">Spouse</option>
@@ -698,7 +695,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-three-age"
-                                name="member-three-age">
+                                name="memberThreeAge">
                         </div>
                     </div>
                 </div>
@@ -707,13 +704,13 @@
                     <div class="col-md organisation">
                         <label for="member-four-name">Name</label>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="member-four-name" name="member-four-name" />
+                            <input type="text" class="form-control" id="member-four-name" name="memberFourName" />
                         </div>
                     </div>
                     <div class="col-md year">
                         <label for="member-four-relation">Relation</label>
                         <div class="form-floating">
-                            <select class="form-select" id="member-four-relation" name="member-four-relation"
+                            <select class="form-select" id="member-four-relation" name="memberFourRelation"
                                 aria-label="Floating label select example" onchange='CheckRelation(this.value,"age4");'>
                                 <option value=""></option>
                                 <option value="Spouse">Spouse</option>
@@ -727,7 +724,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-four-age"
-                                name="member-four-age">
+                                name="memberFourAge">
                         </div>
                     </div>
                 </div>
@@ -736,14 +733,14 @@
                     <div class="col-md organisation">
                         <label for="member-five-name">Name</label>
                         <div class="form-floating">
-                            <input type="text" class="form-control" name="member-five-name" id="member-five-name" />
+                            <input type="text" class="form-control" name="memberFiveName" id="member-five-name" />
 
                         </div>
                     </div>
                     <div class="col-md year">
                         <label for="member-five-relation">Relation</label>
                         <div class="form-floating">
-                            <select class="form-select" id="member-five-relation" name="member-five-relation"
+                            <select class="form-select" id="member-five-relation" name="memberFiveRelation"
                                 aria-label="Floating label select example" onchange='CheckRelation(this.value,"age5");'>
                                 <option value=""></option>
                                 <option value="Spouse">Spouse</option>
@@ -756,7 +753,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-five-age"
-                                name="member-five-age">
+                                name="memberFiveAge">
                         </div>
                     </div>
                 </div>
@@ -779,9 +776,9 @@
             <div id="note-before-payment" style="display: none; margin-top:1em;">
                 <li class="note-style">Go to the QR code and make payment by using GPay, Paytm, PhonePe, WhatsApp
                     payment app, PayPal, Bhim, or net banking online payment modes.</li>
-
                 <li class="note-style">Next, come back to the registration page, and in the transaction details section,
-                    please enter the transaction Id and other relevant information. Then <b>SUBMIT</b> your form.</li>
+                        please enter the transaction Id and other relevant information. Then <b>SUBMIT</b> your form.</li>
+                        <li class="note-style">NOTE: Timing for Registration is 9:30 AM to 5:00 PM Next Day (Concluding)</li>
             </div>
 
             <!-- payment details - physical-->
@@ -855,19 +852,19 @@
             <!-- trasaction id -->
             <div class="row g-2" id="transaction-input" style="display: none;">
                 <div class="col-md transaction">
-                    <label class="form-label" for="floatingInputGrid">Bank Account Holder Name</label>
+                    <label class="form-label" for="floatingInputGrid">Bank Account Holder Name<sup style="color: red;">*</sup></label>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="account_holder_name" name="account_holder_name"
+                        <input type="text" class="form-control" id="account_holder_name" name="bankAccountHolderName"
                             size="25"></textarea>
                     </div>
-                    <label class="form-label" for="floatingInputGrid">Transaction ID</label>
+                    <label class="form-label" for="floatingInputGrid">Transaction ID<sup style="color: red;">*</sup></label>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="transaction-id" name="transaction-id" size="25"
+                        <input type="text" class="form-control" id="transaction-id" name="transactionID" size="25"
                             onkeyup="EnableDisable(document.getElementById('amount-paid'))"></textarea>
                     </div>
-                    <label class="form-label" for="floatingInputGrid">Total Amount Paid</label>
+                    <label class="form-label" for="floatingInputGrid">Total Amount Paid<sup style="color: red;">*</sup></label>
                     <div class="form-floating">
-                        <input type="number" class="form-control" id="amount-paid" name="amount-paid" size="25"
+                        <input type="number" class="form-control" id="amount-paid" name="totalAmountPaid" size="25"
                             onkeyup="EnableDisable(this)"></textarea>
                     </div>
                 </div>
@@ -878,7 +875,7 @@
             <div class="row g-2">
                 <div class="col-md organisation">
                     <div class="form-floating">
-                        <button type="submit" value="submitForm();" class="btn btn-primary btn-lg register-btn"
+                        <button type="submit" value="submitForm();" class="btn btn-primary btn-lg register-btn" id="submitBtn"
                             disabled="disabled">
                             SUBMIT
                         </button>
@@ -898,7 +895,7 @@
 
         <div class="footer">
             <h4 class="screenshot"> To ensure payment confirmation, please share the transaction details along with
-                payment screenshot to whatsapp no . <strong>+91 89621-30661</strong></h4>
+                payment screenshot to whatsapp no . <strong>+91 94255-58582</strong></h4>
             <h3>You will be updated in 24 hours.</h3>
         </div>
 
@@ -937,7 +934,7 @@
                                 <!-- <p><b>If Already paid then ignore this message.</b></p> -->
                                 <p class="screenshot"> Please to ensure payment confirmation, share the transaction
                                     details along with payment screenshot to whatsapp no . <strong><br>+91
-                                        89621-30661</strong></p>
+                                        94255-58582</strong></p>
                                 <p>You will be updated in 24 hours.</p>
                                 <!-- <p style="color:green"><b>If Already paid then ignore this message.</b></p> -->
                             </div>
@@ -965,7 +962,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
 
     <!--pageclip-->
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <!--<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>-->
 
 
     <script type="text/javascript">
@@ -1021,7 +1018,83 @@
     </script>
 
     <script src="./assets/js/registration.js"></script>
+    <script>
+        // URL to the Google Apps Script web app
+        const url = "https://script.google.com/macros/s/AKfycbzXoCHGNxmUjcCKfAyOAUjkqRlIUhxBCEs08NaL9i05CNAxAF92tB_6l_qbR6xw5f3gwg/exec";
 
+        const form = document.getElementById("uploadForm");
+        const fileInput = form.querySelector("input[type='file']");
+
+        // Event listener for form submission
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get the selected file
+            const file = fileInput.files[0];
+            const formData = new FormData(form);
+            const textData = Object.fromEntries(formData.entries());
+
+            // Check if file is selected
+            if (file) {
+                const fileReader = new FileReader();
+
+                // Event listener for file reading
+                fileReader.addEventListener('loadend', () => {
+                    const result = fileReader.result;
+                    const base64 = result.split("base64,")[1];
+
+                    // Create an object with form data
+                    const obj = {
+                        base64: base64,
+                        type: file.type,
+                        name: file.name,
+                        ...textData
+                    };
+
+                    // Send the data to the server
+                    fetch(url, {
+                        method: "POST",
+                        body: JSON.stringify(obj)
+                    })
+                        .then(response => response.text())
+                        .then(data => console.log(data))
+                        .catch(error => console.error('Error:', error));
+                });
+
+                // Read the file as a data URL
+                fileReader.readAsDataURL(file);
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+        const submitBtn = document.getElementById('submitBtn');
+        const modalElement = document.getElementById('exampleModal');
+        const modal = new bootstrap.Modal(modalElement);
+
+        // Event listener for form submission
+        const form = document.querySelector('form'); // Assuming your form has a <form> tag
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            
+            // Your validation logic here
+            const isValid = true; // Replace with your validation result
+            
+            if (isValid) {
+                submitBtn.disabled = false;
+                // Show modal
+                modal.show();
+            } else {
+                submitBtn.disabled = true;
+            }
+        });
+
+        // Event listener for when the modal is hidden (e.g., when the "Close" button is clicked)
+        modalElement.addEventListener('hidden.bs.modal', function() {
+            // Refresh the page after the modal is hidden
+            location.reload();
+        });
+    });
+    </script>
+    
 </body>
 
 </html>

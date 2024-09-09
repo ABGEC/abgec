@@ -15,10 +15,10 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-a {
-  color: #ff7700;
-  text-decoration: none;
+li{
+  font-size: 20px;
 }
+
 
 a:hover,
 a:active,
@@ -430,7 +430,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   color: #000;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 3rem;
 }
@@ -447,8 +447,8 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 72px;
-  height: 72px;
+  width: 60px;
+  height: 60px;
   background: rgb(255, 136, 0);
 }
 

@@ -22,8 +22,17 @@
 <body>
   <section class="attendees">
 
-
-
+    <header style="text-align: center; font-family: 'Helvetica Neue', sans-serif; font-size: 32px; color: #fff;  padding: 20px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+      <h1 style="margin: 0;">Members who Attended Meet 2022</h1>
+      
+    </header>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search members...">
+      <button id="searchButton">Search</button>
+  </div>
+  <!-- <div style="margin-top: 20px; text-align: center;">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/175Z1tKIGy5nMabXm87GBhNIgIzbWoFAq8wSzHzm6PiM/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameborder="0"></iframe>
+  </div> -->
     <!-- ************************1969-77*************************** -->
     <h1 class="batch-head">Batch - 1970</h1>
     <div class="list-attendee">
@@ -2226,7 +2235,38 @@
     </div>
 
   </section>
+<script>
+  const searchBar = document.getElementById('searchBar');
+        const searchButton = document.getElementById('searchButton');
+        const attendees = document.querySelectorAll('.list-attendee');
 
+        // Add an event listener to the search button
+        searchButton.addEventListener('click', function() {
+            const query = searchBar.value.toLowerCase();
+            let found = false; // A flag to indicate if a matching name is found
+
+            // Loop through all attendees and hide those that don't match the query
+            attendees.forEach(function(attendee) {
+                const name = attendee.querySelector('h3').textContent.toLowerCase();
+                if (name.includes(query)) {
+                    attendee.style.display = ''; // Show attendee
+                    
+                    // Scroll to the first matching result
+                    if (!found) {
+                        attendee.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        found = true; // Set the flag to true after the first match is found
+                    }
+                } else {
+                    attendee.style.display = 'none'; // Hide attendee
+                }
+            });
+
+            // If no match is found, clear the search input
+            if (!found) {
+                searchBar.value = ''; // Clear the search input if no match is found
+            }
+        });
+</script>
 </body>
 
 </html>
