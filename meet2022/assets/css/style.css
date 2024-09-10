@@ -1209,7 +1209,7 @@ Note End
   }
 
   .president-msg-photo {
-    height: 50vh;
+    height: 49vh;
     background: url('../img/message/1.png') no-repeat center;
     background-size: cover; /* Ensures the image covers the space properly */
 }
