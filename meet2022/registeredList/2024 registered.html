@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data from Google Sheets API</title>
+  <style>
+    /* Basic CSS for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Data from Google Sheets API</h1>
+  <ul id="dataList"></ul>
+
+  <script>
+    // Wait for the DOM to fully load
+    document.addEventListener('DOMContentLoaded', function() {
+      const apiUrl = 'https://script.google.com/macros/s/AKfycbytw_MlXbA-olTeEWp34ae1MPoGD-xsy3t7Y0_4teX41XccOpAspjVW3tHuKZgY-BDy/exec';
+
+      // Fetch data from the API
+      fetch(apiUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          const dataList = document.getElementById('dataList');
+
+          data.data.forEach(item => {
+            const listItem = document.createElement('li');
+
+            // Remove '&export=download' from ImageURL
+            const imageURL = item.ImageURL.replace('&export=download', '');
+            const imageID = extractFileIDFromURL(imageURL);
+            const newImageURL = `https://drive.google.com/thumbnail?id=${imageID}`;
+
+            // Create the HTML content for the list item
+            listItem.innerHTML = `
+              <img src="${newImageURL}" alt="Image"><br>
+              <strong>Title:</strong> ${item.Title}<br>
+              <strong>Name:</strong> ${item.Name}<br>
+              <strong>Passout Year:</strong> ${item.PassoutYear}<br>
+              <strong>Branch:</strong> ${item.Branch}<br>
+            `;
+
+            dataList.appendChild(listItem);
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          const errorElement = document.createElement('p');
+          errorElement.textContent = 'Failed to fetch data. Please try again later.';
+          document.body.appendChild(errorElement);
+        });
+    });
+
+    /**
+     * Extracts the file ID from a Google Drive URL.
+     * @param {string} url - The URL to extract the file ID from.
+     * @return {string} - The extracted file ID.
+     */
+    function extractFileIDFromURL(url) {
+      const urlObj = new URL(url);
+      return urlObj.searchParams.get('id');
+    }
+  </script>
+
+</body>
+</html>

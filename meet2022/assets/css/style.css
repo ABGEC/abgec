@@ -356,9 +356,12 @@ h6 {
 }
 
 .president-msg-photo {
-  background: url('../img/message/president.png') no-repeat center;
+  background: url('../img/message/Dr..png') no-repeat center;
+  background-size: contain; /* Adjust this to prevent stretching */
   height: 300px;
+  width: 100%; /* You can adjust this as needed */
 }
+
 
 .principal-msg-photo {
   background: url('../img/message/principal.png') no-repeat center;
@@ -1208,7 +1211,16 @@ Note End
   .president-msg-photo {
     height: 50vh;
     background: url('../img/message/1.png') no-repeat center;
-  }
+    background-size: cover; /* Ensures the image covers the space properly */
+}
+
+@media (max-width: 768px) {
+    .president-msg-photo {
+        height: 30vh; /* Adjust the height for mobile devices */
+        background-size: contain; /* Ensure the image scales properly on small screens */
+    }
+}
+
 
   .principal-msg-photo {
     height: 50vh;
