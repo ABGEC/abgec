@@ -3,37 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data from Google Sheets API</title>
+  <title>Alumni Meet 2024 Regsitered Members</title>
   <style>
-    /* Basic CSS for better presentation */
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      padding: 10px;
-    }
-    img {
-      max-width: 200px;
-      max-height: 200px;
-    }
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+ul {
+    
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    border: 2px solid red;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #fff;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+li .details {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: center;
+}
+
+li h2 {
+    font-size: 2em; /* Increased font size for name */
+    margin: 0 0 10px 0; /* Added margin below the name */
+    color: #2c3e50;
+}
+
+li .detail-item {
+    font-size: 1.6em; /* Increased font size for individual details */
+    color: #34495e;
+    margin: 5px 0; /* Adds space between each line */
+    line-height: 1.8;
+}
+
+li .button-container {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em; /* Increased button font size */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
   </style>
 </head>
 <body>
-  
-  <h1>Data from Google Sheets API</h1>
-  <ul id="dataList"></ul>
+  <div class="center-container">
+  <h1>Alumni Meet 2024 Regsitered Members</h1></div>
+  <ul class="dataList" id="dataList"></ul>
 
   <script>
     // Wait for the DOM to fully load
     document.addEventListener('DOMContentLoaded', function() {
-      const apiUrl = 'https://docs.google.com/spreadsheets/d/15ndCc4pfJlDx_KAqnVt64NkZy7-_JDCuxkcXqmHg6Zw/edit?usp=sharing';
+      const apiUrl = 'https://script.google.com/macros/s/AKfycbzXoCHGNxmUjcCKfAyOAUjkqRlIUhxBCEs08NaL9i05CNAxAF92tB_6l_qbR6xw5f3gwg/exec';
 
       // Fetch data from the API
       fetch(apiUrl)
