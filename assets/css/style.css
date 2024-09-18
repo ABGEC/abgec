@@ -79,7 +79,7 @@ body {
   text-transform: uppercase;
   margin: 0px 10px;
   position: relative;
-  color: white;
+  color: rgb(13, 1, 1);
   /*#023047;*/
 }
 
@@ -124,7 +124,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(94, 26, 154);
+  background-color: rgb(255, 254, 255);
   /* background-image: linear-gradient( rgb(94, 26, 154), rgb(255, 105, 255)); */
   /* rgba(255, 255, 255, 1)*/
   padding: 5px 0px;
@@ -189,7 +189,8 @@ body {
 
   .navbar {
     width: 100%;
-    background-color: rgb(94, 26, 154);
+    background-color: rgb(253, 253, 253);
+    color: #000;
     /*one change*/
     position: absolute;
     padding: 10px 10px;
@@ -208,7 +209,8 @@ body {
     top: 0;
     right: 0;
     width: 100%;
-    background-color: rgb(94, 26, 154);
+    background-color: rgb(255, 255, 255);
+    color: #000a35;
     /*one change*/
     padding: 5px 5px;
     transition: 0.5s;
