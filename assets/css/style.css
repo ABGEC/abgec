@@ -114,6 +114,7 @@ body {
   transition: 0.5s;
 }
 
+
 .nav-item .nav-link:hover:before {
   transform: scaleX(1);
   transform-origin: right;
