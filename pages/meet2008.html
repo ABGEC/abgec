@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet 2008 Members</title>
+    <style>
+    h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    padding: 20px;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table td:last-child {
+    display: none;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+th {
+    background-color: #b7da45;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+tr:hover td {
+    background-color: #f2f2f2;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1d2671;
+}
+
+.batch-header {
+    background-color: #1d2671;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.group-header td:first-child {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.group-header td:not(:first-child) {
+    border: none;
+}
+
+table td:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.search-input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 5px rgba(50, 115, 220, 0.3);
+    border-color: #1d2671;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-button:hover {
+    background-color: #1d2671;
+    transform: scale(1.05);
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+table td:nth-child(2) {
+    text-align: center;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th:first-child, table td:first-child {
+    width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    .search-input {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+<body>
+    <h1>Meet 2008 Registered Members</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by name" class="search-input">
+        <button onclick="searchByName()" class="search-button">Search</button>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <td>S.No.</td>
+            <td>NAME</td>
+            <td>PASSING YEAR</td>
+            <td>BRANCH</td>
+            <td>MOBILE</td>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Arvind Dua</td>
+            <td>1971</td>
+            <td>MECH</td>
+            <td>098930-54345</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>K Mangapati</td>
+            <td>1971</td>
+            <td>ELEC</td>
+            <td>0891-278135</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>VK Awasthi</td>
+            <td>1971</td>
+            <td>ELEC</td>
+            <td>099931-96785</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Anil Luthra</td>
+            <td>1972</td>
+            <td>MECH</td>
+            <td>94252-25500</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>SK Ganguli</td>
+            <td>1972</td>
+            <td>CIVIL</td>
+            <td>098312-30894</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>C.Mukherjee</td>
+            <td>1974</td>
+            <td>MECH</td>
+            <td>99934-32028</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>O.P.Tiwari</td>
+            <td>1975</td>
+            <td>CIVIL</td>
+            <td>99935-96505</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Govind Kumar Sharma</td>
+            <td>1977</td>
+            <td>CIVIL</td>
+            <td>094241-41308</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Pranab Kumar Dutta</td>
+            <td>1977</td>
+            <td>CIVIL</td>
+            <td>94241-47693</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Raj Kumar Agrawal</td>
+            <td>1977</td>
+            <td>MECH</td>
+            <td>93003-21500</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>T.P.S.Arora</td>
+            <td>1977</td>
+            <td>MECH</td>
+            <td>094252-
+       19490,093004-82424</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>S C Tuteja</td>
+            <td>1977</td>
+            <td>MECH</td>
+            <td>9907181327</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>SK Shashtri</td>
+            <td>1977</td>
+            <td>ELEC</td>
+            <td>098855-70759</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Jyotirmay Arya</td>
+            <td>1979</td>
+            <td>MECH</td>
+            <td>98261-30163</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>P.K.Majumdar</td>
+            <td>1979</td>
+            <td>ELEC</td>
+            <td>98271-17648</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>R.K. Awasthi</td>
+            <td>1979</td>
+            <td>ELEC</td>
+            <td>098261-16738</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Santosh Kumar Tiwari</td>
+            <td>1979</td>
+            <td>ELEC</td>
+            <td>99261-64212</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>D.V.Satyanarayana</td>
+            <td>1979</td>
+            <td>ELEC</td>
+            <td>971506512062</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Rohit Kumar Shivhare</td>
+            <td>1980</td>
+            <td>CIVIL</td>
+            <td>94252-23378</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>H.S. Dhingra</td>
+            <td>1980</td>
+            <td>CIVIL</td>
+            <td>93011-56464</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Dinesh K Thakur</td>
+            <td>1981</td>
+            <td>MECH</td>
+            <td>94250-14822</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Dr. Balbir Singh Chawla</td>
+            <td>1981</td>
+            <td>MECH</td>
+            <td>094241-44099,094252-26929</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Kamlesh Kumar Tripathi</td>
+            <td>1981</td>
+            <td>CIVIL</td>
+            <td>093033-10142</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>Pradeep Pathak</td>
+            <td>1981</td>
+            <td>CIVIL</td>
+            <td>94254-34919</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>Raj Kumar Verma</td>
+            <td>1981</td>
+            <td>MECH</td>
+            <td>099921-12001</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>Ram Nagina Singh</td>
+            <td>1981</td>
+            <td>CIVIL</td>
+            <td>094251-36248</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>Suresh Bajpayee</td>
+            <td>1981</td>
+            <td>CIVIL</td>
+            <td>098274-09671,990799956</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>Tarun Sarkar</td>
+            <td>1981</td>
+            <td>ELEC</td>
+            <td>98271-05476</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>Arun Reja</td>
+            <td>1981</td>
+            <td>CIVIL</td>
+            <td>098263-07040</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>Arun Shukla</td>
+            <td>1981</td>
+            <td>CIVIL</td>
+            <td>094257-09903</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>C P jain</td>
+            <td>1981</td>
+            <td>CIVIL</td>
+            <td>094252-19490,09300482424</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Ms. Rinku Dhar (Das)</td>
+            <td>1981</td>
+            <td>ELEC</td>
+            <td>94256-02033</td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>Narendra Jain</td>
+            <td>1981</td>
+            <td>MECH</td>
+            <td>093014-25000,094252-96376</td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>P.K. Basu</td>
+            <td>1981</td>
+            <td>ELEC</td>
+            <td>99071-81467</td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>Rajeev Shrivastava</td>
+            <td>1981</td>
+            <td>MECH</td>
+            <td>094250-16693</td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>Sushil Kumar Sinha</td>
+            <td>1981</td>
+            <td>MECH</td>
+            <td>099870-30976</td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>Akhilesh Kumar Shrivastava</td>
+            <td>1982</td>
+            <td>ELEC</td>
+            <td>94252-19129</td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>CS Vithalkar</td>
+            <td>1982</td>
+            <td>Mech</td>
+            <td>094242-07040</td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>Daljeet Singh Sidana</td>
+            <td>1982</td>
+            <td>CIVIL</td>
+            <td>98271-11776</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>Pramod Kumar Shukla</td>
+            <td>1982</td>
+            <td>CIVIL</td>
+            <td>094255-30239</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>Sanjeev Beohar</td>
+            <td>1982</td>
+            <td>CIVIL</td>
+            <td>094252-15197</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>Shesh Narayan Shukla</td>
+            <td>1982</td>
+            <td>CIVIL</td>
+            <td>094252-44093</td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>Soumendu Bagchi</td>
+            <td>1982</td>
+            <td>ELEC</td>
+            <td>94242-64839</td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>Sudheer Gupta</td>
+            <td>1982</td>
+            <td>CIVIL</td>
+            <td>99935-96555, 98271-81118</td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>M Narendra Rao</td>
+            <td>1982</td>
+            <td>MECH</td>
+            <td>09889-751052,099488-84448</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>Mrinal Chakrabarty</td>
+            <td>1982</td>
+            <td>ELEC</td>
+            <td>94252-22267</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>Tanmoy Moitra</td>
+            <td>1982</td>
+            <td>CIVIL</td>
+            <td>094701-93919</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>V.P.S. Man</td>
+            <td>1982</td>
+            <td>CIVIL</td>
+            <td>098146-60877</td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>Arjun Singh Thakur</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>094242-03614</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>Arun Dutt Tiwari</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>971505000000</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>Asit Kumar Dutta</td>
+            <td>1983</td>
+            <td>MECH</td>
+            <td>98271-84951</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>Dulichand Agrawal</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94252-29082</td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>G.P.Rai</td>
+            <td>1983</td>
+            <td>ELECT</td>
+            <td>94252-27905</td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td>Gajanan Chaurasia</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>97520-11573</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>Gyan Vardhan Mishra</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94254-26663</td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td>Kailash Chandra Agrawal</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>094076-05783</td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td>Mirza Anwar Baig</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94255-36830</td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td>Pramod Kumar Durge</td>
+            <td>1983</td>
+            <td>ELEC</td>
+            <td>098271-03715</td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td>Ram Gopal Dewangan</td>
+            <td>1983</td>
+            <td>MECH</td>
+            <td>094252-24530</td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>Shashi.M. Deshpande</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94252-58185,92291-27902</td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td>Shashikant Sonpure</td>
+            <td>1983</td>
+            <td>MECH</td>
+            <td>98279-18650</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td>Arvind Jain</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94254-12599</td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>Dharam Prakash Bhatnagar</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>094068-44597</td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td>K.K.Shrivastava</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>9907181223</td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>Kelkar</td>
+            <td>1983</td>
+            <td>ELEC</td>
+            <td>099229-76945</td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td>Kishore Lala</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>094252-05576</td>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td>Neelesh Shah</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>093129-40509</td>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td>Pradeep Gadkari</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94250-50210</td>
+          </tr>
+          <tr>
+            <td>69</td>
+            <td>R.K.Chaubey</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94063-00224</td>
+          </tr>
+          <tr>
+            <td>70</td>
+            <td>Rajeev Deshpande</td>
+            <td>1983</td>
+            <td>ELEC</td>
+            <td>094234-18914</td>
+          </tr>
+          <tr>
+            <td>71</td>
+            <td>Rajendra Gaur</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94308-17408</td>
+          </tr>
+          <tr>
+            <td>72</td>
+            <td>Rajesh Dwivedi</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>94258-62619</td>
+          </tr>
+          <tr>
+            <td>73</td>
+            <td>Rajesh Green</td>
+            <td>1983</td>
+            <td>MECH</td>
+            <td>94255-41813</td>
+          </tr>
+          <tr>
+            <td>74</td>
+            <td>Shriram Mishra</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>99229-97098</td>
+          </tr>
+          <tr>
+            <td>75</td>
+            <td>V.R.Chetty</td>
+            <td>1983</td>
+            <td>CIVIL</td>
+            <td>93290-18577</td>
+          </tr>
+          <tr>
+            <td>76</td>
+            <td>Vivek Deshpande</td>
+            <td>1983</td>
+            <td>MECH</td>
+            <td>094031-96560</td>
+          </tr>
+          <tr>
+            <td>77</td>
+            <td>M.S Rajput</td>
+            <td>1983</td>
+            <td>Civil</td>
+            <td>99813-16435</td>
+          </tr>
+          <tr>
+            <td>78</td>
+            <td>Anil Kumar Khare</td>
+            <td>1984</td>
+            <td>MECH</td>
+            <td>94250-13355</td>
+          </tr>
+          <tr>
+            <td>79</td>
+            <td>Arvinder Singh Toor</td>
+            <td>1984</td>
+            <td>MECH</td>
+            <td>099930-00688</td>
+          </tr>
+          <tr>
+            <td>80</td>
+            <td>Malay Chatterjee</td>
+            <td>1984</td>
+            <td>MECH</td>
+            <td>098934-06751</td>
+          </tr>
+          <tr>
+            <td>81</td>
+            <td>Parminder Singh Toor</td>
+            <td>1984</td>
+            <td>MECH</td>
+            <td>098931-01339</td>
+          </tr>
+          <tr>
+            <td>82</td>
+            <td>Sanjeev Jain</td>
+            <td>1984</td>
+            <td>MECH</td>
+            <td>098261-37734</td>
+          </tr>
+          <tr>
+            <td>83</td>
+            <td>M lqbal</td>
+            <td>1984</td>
+            <td>CIVIL</td>
+            <td>098503-44260</td>
+          </tr>
+          <tr>
+            <td>84</td>
+            <td>Rajesh Sen</td>
+            <td>1984</td>
+            <td>CIVIL</td>
+            <td>98271-55570</td>
+          </tr>
+          <tr>
+            <td>85</td>
+            <td>S S Bakhshi</td>
+            <td>1984</td>
+            <td>CIVIL</td>
+            <td>097697-14301</td>
+          </tr>
+          <tr>
+            <td>86</td>
+            <td>Satish Sharma</td>
+            <td>1984</td>
+            <td>CIVIL</td>
+            <td>94250-35418</td>
+          </tr>
+          <tr>
+            <td>87</td>
+            <td>Bhagawat Prasad Soni</td>
+            <td>1985</td>
+            <td>CIVIL</td>
+            <td>098279-53250</td>
+          </tr>
+          <tr>
+            <td>88</td>
+            <td>Bishram Prasad Sahu</td>
+            <td>1985</td>
+            <td>CIVIL</td>
+            <td>098268-49907</td>
+          </tr>
+          <tr>
+            <td>89</td>
+            <td>Madhu Sudan Agrawal</td>
+            <td>1985</td>
+            <td>CIVIL</td>
+            <td>094251-81383</td>
+          </tr>
+          <tr>
+            <td>90</td>
+            <td>Pankaj Panchayati</td>
+            <td>1985</td>
+            <td>CIVIL</td>
+            <td>099935-96535</td>
+          </tr>
+          <tr>
+            <td>91</td>
+            <td>Sunil Kumar Soni</td>
+            <td>1985</td>
+            <td>CIVIL</td>
+            <td>98935-42408</td>
+          </tr>
+          <tr>
+            <td>92</td>
+            <td>Alok Nema</td>
+            <td>1985</td>
+            <td>CIVIL</td>
+            <td>094254-47547</td>
+          </tr>
+        </tbody>
+      </table>
+      <script>
+        function searchByName() {
+                    const searchInput = document.getElementById("search-input");
+                    const searchTerm = searchInput.value.toLowerCase();
+                    const rows = document.querySelectorAll("tbody tr");
+        
+                    for (const row of rows) {
+                        const nameCell = row.cells[1];
+                        const name = nameCell.textContent.toLowerCase();
+                        if (name.includes(searchTerm)) {
+                            row.style.display = "table-row";
+                        } else {
+                            row.style.display = "none";   
+        
+                        }
+                    }
+                }
+                function sortBatches() {
+                    // ... your existing sortBatches function ...
+        
+                    // Add group headings
+                    const rows = document.querySelectorAll("tbody tr");
+                    let currentGroup = null;
+                    rows.forEach(row => {
+                        const rowBatch = row.cells[2].textContent.trim();
+                        if (rowBatch !== currentGroup) {
+                            const groupHeader = document.createElement("tr");
+                            groupHeader.className = "group-header";
+                            groupHeader.innerHTML = `<td><span>${rowBatch}</span></td><td colspan="4"></td>`;
+                            row.parentNode.insertBefore(groupHeader, row);
+                            currentGroup = rowBatch;
+                        }
+                    });
+                }
+        
+                window.onload = sortBatches;
+                document.getElementById("myTable").addEventListener("click", function (event) {
+            if (event.target.tagName === "TD") {
+                const name = event.target.parentElement.children[1].textContent;
+                // Replace "other_page.html" with the actual URL of your other page
+                window.location.href = "https://abgec.in/meet2022/registeredList/index.html" + name;
+            }
+        });
+            </script>
+</body>
+</html>

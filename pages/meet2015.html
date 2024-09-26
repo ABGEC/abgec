@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet 2015 Registered Members</title>
+    <style>
+        h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1a1a1a;
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fafafa;
+        padding: 20px;
+        color: #333;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s;
+    }
+    
+    th {
+        background-color: #b7da45;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    tr:hover td {
+        background-color: #f2f2f2;
+    }
+    
+    .header {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 28px;
+        font-weight: bold;
+        color: #1d2671;
+    }
+    
+    .batch-header {
+        background-color: #1d2671;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    
+    .group-header td:first-child {
+        background-color: #f5f5f5;
+        color: #333;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .group-header td:not(:first-child) {
+        border: none;
+    }
+    
+    table td:first-child {
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .search-input {
+        padding: 10px;
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        transition: box-shadow 0.3s, border-color 0.3s;
+    }
+    
+    .search-input:focus {
+        box-shadow: 0 0 5px rgba(50, 115, 220, 0.3);
+        border-color: #1d2671;
+    }
+    
+    .search-button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .search-button:hover {
+        background-color: #1d2671;
+        transform: scale(1.05);
+    }
+    
+    .search-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    table td:nth-child(2) {
+        text-align: center;
+    }
+    
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    table th:first-child, table td:first-child {
+        width: 50px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        table {
+            font-size: 14px;
+        }
+    
+        .search-input {
+            width: 60%;
+        }
+    
+        h1 {
+            font-size: 24px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Meet 2015 Registered Members</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by name" class="search-input">
+        <button onclick="searchByName()" class="search-button">Search</button>
+    </div>
+    <table>
+        <thead>
+          <tr>
+            <td>SN.</td>
+            <td>NAME</td>
+            <td>BATCH</td>
+            <td>BRANCH</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Dayal Das Lalchandani</td>
+            <td>1969</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>P. S. Kshatri</td>
+            <td>1970</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>L. C. Soni</td>
+            <td>1970</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>R. K. Nayak</td>
+            <td>1970</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>D.S. Rai IAS</td>
+            <td>1970</td>
+            <td>MSc. Chem</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>A.S. Chandel</td>
+            <td>1970</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Arvind Dua</td>
+            <td>1971</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Vimal Kant Awasthi</td>
+            <td>1971</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Kiran Kapoor</td>
+            <td>1971</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Arvind Kumar Dua</td>
+            <td>1972</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Anil Luthra</td>
+            <td>1972</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>D. P. Sharma</td>
+            <td>1972</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>H.P.S. Chouhan</td>
+            <td>1973</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Gopal Chandra Mukherjee</td>
+            <td>1976</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Tavinderpal Singh Arora </td>
+            <td>1977</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Rajkumar Agrawal </td>
+            <td>1977</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Arvind Shukla</td>
+            <td>1977</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Anil Kumar Dubey</td>
+            <td>1977</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>R. K. Mitra</td>
+            <td>1977</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>S. C. Tuteja</td>
+            <td>1977</td>
+            <td>mech</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Anil Kumar Vyas</td>
+            <td>1978</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>R. K. Awasthi</td>
+            <td>1979</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Pradeep Kumar Mazumdar</td>
+            <td>1979</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>K. S. Sandhu</td>
+            <td>1979</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>M. Rangraj lyengar</td>
+            <td>1979</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>Kumar Mukharjee</td>
+            <td>1979</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>M J. Prasad</td>
+            <td>1979</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>Dinesh Chandra Garg</td>
+            <td>1979</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>P.K. Khare</td>
+            <td>1979</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>Jyotirmay Arya</td>
+            <td>1979</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>Soumendu Bagchi</td>
+            <td>1979</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Tula Ram Yadav</td>
+            <td>1979</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>K. V.K. Vishveshwar</td>
+            <td>1979</td>
+            <td>mech</td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>Satish Kumar Sahu</td>
+            <td>1979</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>Hari Narayan Goel</td>
+            <td>1979</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>Dilip Kumar Thakur</td>
+            <td>1979</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>Pradeep Chowdhary</td>
+            <td>1979</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>Om Prakash Singh</td>
+            <td>1979</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>Sunil Kumar Rai</td>
+            <td>1979</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>Debashish Nandi</td>
+            <td>1979</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>Y.C. Sharma</td>
+            <td>1980</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>Bhim Shankar Agrawal</td>
+            <td>1980</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>H.S. Dhingra</td>
+            <td>1980</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>S.N. Buxy</td>
+            <td>1980</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>Pradeep Modhak</td>
+            <td>1980</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>Rohit Kumar Shivhare</td>
+            <td>1980</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>Shrikant Sharma </td>
+            <td>1980</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>Dr. B. S. Chawla</td>
+            <td>1981</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>Vasant Dave</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td> Alip Roy</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td> Anil Kumar Lalit</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>Rajkumar Verma</td>
+            <td>1981</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>Chandra Prakash</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td>Parmanand Jain</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>Jangde Sunil Kumar Ravi</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td>Pradeep Kumar</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td>Sharma Dinesh Thakur</td>
+            <td>1981</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td>Kamlesh Tripathi</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td>N. Singh</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>Ajit Gour</td>
+            <td>1981</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td>Soumen Panda</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td>P. Nagrangesh</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>C. S. Vithalkar</td>
+            <td>1982</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td>Pati Ram Patel</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>Sudheer Gupta</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td>Daljit Singh Sidana</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td>P. N. Sahu</td>
+            <td>1982</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td>Sunil Dey</td>
+            <td>1982</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>69</td>
+            <td>V. P. S. Bhalla</td>
+            <td>1982</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>70</td>
+            <td>S. N. Shukla</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>71</td>
+            <td>Jasbir Singh</td>
+            <td>1982</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>72</td>
+            <td>Akhilesh Kumar Shrivastav</td>
+            <td>1982</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>73</td>
+            <td>Sanjeev Beohar</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>74</td>
+            <td>Rohit Kumar Sahu</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>75</td>
+            <td>Prem Prakash Khare</td>
+            <td>1982</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>76</td>
+            <td>S. M. Deshpande</td>
+            <td>1983</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>77</td>
+            <td>Kailash Chandra Agrawal</td>
+            <td>1983</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>78</td>
+            <td>Rangaswami Parthan</td>
+            <td>1983</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>79</td>
+            <td>Guru Prasad Rai</td>
+            <td>1983</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>80</td>
+            <td>Deepak Agrawal</td>
+            <td>1983</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>81</td>
+            <td>Jaishri</td>
+            <td>1983</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>82</td>
+            <td>Shriniwas Rao</td>
+            <td>1983</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>83</td>
+            <td>R. K. Choube</td>
+            <td>1983</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>84</td>
+            <td>Sanjeev Jain</td>
+            <td>1984</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>85</td>
+            <td>Bharat Bhushan Tiwari</td>
+            <td>1984</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>86</td>
+            <td>Parminder Singh Toor</td>
+            <td>1984</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>87</td>
+            <td>Arvind Patruvar</td>
+            <td>1984</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>88</td>
+            <td>Kantilal Patel</td>
+            <td>1985</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>89</td>
+            <td>Rajesh Chaturvedi</td>
+            <td>1985</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>90</td>
+            <td>Rajesh kumar Trivedi</td>
+            <td>1985</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>91</td>
+            <td>Sanjay Sharma</td>
+            <td>1985</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>92</td>
+            <td>P. K. Panchayati</td>
+            <td>1985</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>93</td>
+            <td>Harish Trivedi</td>
+            <td>1985</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>94</td>
+            <td>Ashok Verma</td>
+            <td>1985</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>95</td>
+            <td>Dr. Alok Kumar Shrivastava</td>
+            <td>1986</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>96</td>
+            <td>Rajesh Gupta</td>
+            <td>1986</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>97</td>
+            <td>U.K. Kopulwar</td>
+            <td>1986</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>98</td>
+            <td>Sanjiv Brijpuriya</td>
+            <td>1986</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>99</td>
+            <td>T. D. Sandilya</td>
+            <td>1986</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>R. K. S. Harbans</td>
+            <td>1986</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>101</td>
+            <td>R.K. Naik</td>
+            <td>1986</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Surendra Shukla</td>
+            <td>1986</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>103</td>
+            <td>Sudhir Pandya</td>
+            <td>1987</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>104</td>
+            <td>Prakash Agrawal</td>
+            <td>1987</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>105</td>
+            <td>Dr Manoj Kulshreshth</td>
+            <td>1987</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>106</td>
+            <td>Rajeev Dua</td>
+            <td>1987</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>107</td>
+            <td>Sandeep Agrawal</td>
+            <td>1987</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>108</td>
+            <td>Rajesh Kumar Pandey</td>
+            <td>1988</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>109</td>
+            <td>Anup singh</td>
+            <td>1988</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>110</td>
+            <td>M. R. K. Shariff</td>
+            <td>1988</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>111</td>
+            <td>M. L. Agrawal</td>
+            <td>1988</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>112</td>
+            <td>Paramjeet Saluja</td>
+            <td>1988</td>
+            <td>mech</td>
+          </tr>
+          <tr>
+            <td>113</td>
+            <td>Sujit Gupta</td>
+            <td>1988</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>114</td>
+            <td>Rajesh Thawait</td>
+            <td>1988</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>115</td>
+            <td>Sahdeo Bharti</td>
+            <td>1988</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>116</td>
+            <td>Gopal Patel</td>
+            <td>1988</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>117</td>
+            <td>Jinesh Jain</td>
+            <td>1988</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>118</td>
+            <td>Shirish Mohan Verma</td>
+            <td>1988</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>119</td>
+            <td>Sameer Sharma</td>
+            <td>1988</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>120</td>
+            <td>Vinay Agrawal</td>
+            <td>1988</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>121</td>
+            <td>M. L. Agrawal</td>
+            <td>1988</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>122</td>
+            <td>G. D. Ramtekkar</td>
+            <td>1988</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>123</td>
+            <td>Uttam Banerjee</td>
+            <td>1988</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>124</td>
+            <td>Pramod Gupta</td>
+            <td>1988</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>125</td>
+            <td>Prashant Bapat</td>
+            <td>1989</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>126</td>
+            <td>Manish Sharma IPS</td>
+            <td>1989</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>127</td>
+            <td>Abhijit Sinha</td>
+            <td>1989</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>128</td>
+            <td>Subodh Thakur</td>
+            <td>1989</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>129</td>
+            <td>Ashish Gore</td>
+            <td>1990</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>130</td>
+            <td>Dr. Rajesh Kumar Singh</td>
+            <td>1990</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>131</td>
+            <td>Jitendra Shukla SAS</td>
+            <td>1990</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>132</td>
+            <td>Avinash Chand Rai</td>
+            <td>1991</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>133</td>
+            <td>Vijay Kumar</td>
+            <td>1991</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>134</td>
+            <td>Rajendra Prasad</td>
+            <td>1992</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>135</td>
+            <td>Lal Bahadur Yadav</td>
+            <td>1992</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>136</td>
+            <td>Dr. Gopesh Dwivedi</td>
+            <td>1992</td>
+            <td>Mining</td>
+          </tr>
+          <tr>
+            <td>137</td>
+            <td>Satish Saraf</td>
+            <td>1992</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>138</td>
+            <td>G. A. Salim</td>
+            <td>1992</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>139</td>
+            <td>G. L. Sonkar</td>
+            <td>1992</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>140</td>
+            <td>Raj Kumar Mishra</td>
+            <td>1992</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>141</td>
+            <td>Satish Agrawal</td>
+            <td>1992</td>
+            <td>Elect</td>
+          </tr>
+          <tr>
+            <td>142</td>
+            <td>Gopal Singh Thakur</td>
+            <td>1992</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>143</td>
+            <td>Rajneesh Tiwari</td>
+            <td>1992</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>144</td>
+            <td>Ram awatar singh chouhan</td>
+            <td>1992</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>145</td>
+            <td>Ajay Shriwastav</td>
+            <td>1993</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>146</td>
+            <td>Anupam Tiwari</td>
+            <td>1993</td>
+            <td>civil</td>
+          </tr>
+          <tr>
+            <td>147</td>
+            <td>Tapas Kumar Mazumdar</td>
+            <td>1993</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>148</td>
+            <td>Ajay Kumar Kedia</td>
+            <td>1994</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>149</td>
+            <td>C. S. Vindhyaraj</td>
+            <td>1994</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>150</td>
+            <td>Rajesh Modi</td>
+            <td>1996</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>151</td>
+            <td>Ishwar Singh Kanwar</td>
+            <td>1997</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>152</td>
+            <td>Priyamvada Chandel</td>
+            <td>1999</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>153</td>
+            <td>Suresh Jangde</td>
+            <td>1999</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>154</td>
+            <td>Manish Jain</td>
+            <td>1999</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>155</td>
+            <td>Smt Tripti Jangde</td>
+            <td>2000</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>156</td>
+            <td>Gaurav Soni</td>
+            <td>2004</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>157</td>
+            <td>Pranay Roy</td>
+            <td>2004</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>158</td>
+            <td>Pranay Kumar rahi</td>
+            <td>2004</td>
+            <td>ETNT</td>
+          </tr>
+          <tr>
+            <td>159</td>
+            <td>Roshan Das Manikpuri</td>
+            <td>2006</td>
+            <td>Civil</td>
+          </tr>
+          <tr>
+            <td>160</td>
+            <td>Abhimanyu Kashyap</td>
+            <td>2006</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>161</td>
+            <td>Ganesh Ram Jaiswal</td>
+            <td>2006</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>162</td>
+            <td>Mary Ann Bara</td>
+            <td>2007</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>163</td>
+            <td>Dheeraj Kumar Garhewal</td>
+            <td>2009</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>164</td>
+            <td>Abhishek Tiwari</td>
+            <td>2009</td>
+            <td>Civil</td>
+          </tr>
+        </tbody>
+      </table>
+      <script>
+        function searchByName() {
+                    const searchInput = document.getElementById("search-input");
+                    const searchTerm = searchInput.value.toLowerCase();
+                    const rows = document.querySelectorAll("tbody tr");
+        
+                    for (const row of rows) {
+                        const nameCell = row.cells[1];
+                        const name = nameCell.textContent.toLowerCase();
+                        if (name.includes(searchTerm)) {
+                            row.style.display = "table-row";
+                        } else {
+                            row.style.display = "none";   
+        
+                        }
+                    }
+                }
+                function sortBatches() {
+                    // ... your existing sortBatches function ...
+        
+                    // Add group headings
+                    const rows = document.querySelectorAll("tbody tr");
+                    let currentGroup = null;
+                    rows.forEach(row => {
+                        const rowBatch = row.cells[2].textContent.trim();
+                        if (rowBatch !== currentGroup) {
+                            const groupHeader = document.createElement("tr");
+                            groupHeader.className = "group-header";
+                            groupHeader.innerHTML = `<td><span>${rowBatch}</span></td><td colspan="4"></td>`;
+                            row.parentNode.insertBefore(groupHeader, row);
+                            currentGroup = rowBatch;
+                        }
+                    });
+                }
+        
+                window.onload = sortBatches;
+                document.getElementById("myTable").addEventListener("click", function (event) {
+            if (event.target.tagName === "TD") {
+                const name = event.target.parentElement.children[1].textContent;
+                // Replace "other_page.html" with the actual URL of your other page
+                window.location.href = "https://abgec.in/meet2022/registeredList/index.html" + name;
+            }
+        });
+            </script>
+</body>
+</html>

@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet 2022 Registered Members</title>
+    <style>
+        h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1a1a1a;
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fafafa;
+        padding: 20px;
+        color: #333;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    a{
+      text-decoration: none;
+    }
+
+    
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s;
+    }
+    
+    th {
+        background-color: #b7da45;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    tr:hover td {
+        background-color: #f2f2f2;
+    }
+    
+    .header {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 28px;
+        font-weight: bold;
+        color: #1d2671;
+    }
+    
+    .batch-header {
+        background-color: #1d2671;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    
+    .group-header td:first-child {
+        background-color: #f5f5f5;
+        color: #333;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .group-header td:not(:first-child) {
+        border: none;
+    }
+    
+    table td:first-child {
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .search-input {
+        padding: 10px;
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        transition: box-shadow 0.3s, border-color 0.3s;
+    }
+    
+    .search-input:focus {
+        box-shadow: 0 0 5px rgba(50, 115, 220, 0.3);
+        border-color: #1d2671;
+    }
+    
+    .search-button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .search-button:hover {
+        background-color: #1d2671;
+        transform: scale(1.05);
+    }
+    
+    .search-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    table td:nth-child(2) {
+        text-align: center;
+    }
+    
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    table th:first-child, table td:first-child {
+        width: 50px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        table {
+            font-size: 14px;
+        }
+    
+        .search-input {
+            width: 60%;
+        }
+    
+        h1 {
+            font-size: 24px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Meet 2022 Registered Members</h1>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by name" class="search-input">
+        <button onclick="searchByName()" class="search-button">Search</button>
+    </div>
+    <table>
+        <thead>
+          <tr>
+            <td>Sr. No.</td>
+            <td>NAME</td>
+            <td>BATCH</td>
+            <td>BRANCH</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://abgec.in/meet2022/registeredList/index.html#:~:text=Batch%20%2D%201970-,Mr.%20Nagendra%20Sehgal,-1970%20%2D%20Electrical">Nagendra Sehgal</a></td>
+            <td>1970</td>
+            <td>Electrical</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://abgec.in/meet2022/registeredList/index.html#:~:text=Mr.%20Ramayan%20Prasad%20Shriwas">Mr. Ramayan Prasad Shriwas</a></td>
+            <td>1971</td>
+            <td>Mech</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="https://abgec.in/meet2022/registeredList/index.html#:~:text=Mr.%20Vimal%20Kant%20Awasthi">Mr. Vimal Kant Awasthi</a></td>
+            <td>1971</td>
+            <td>Elect</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="https://abgec.in/meet2022/registeredList/index.html#:~:text=Er.%20Dharm%20Vir%20Bhutani">Mr. Dharm Vir Bhutani</a></td>
+            <td>1971</td>
+            <td>Elect</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="https://abgec.in/meet2022/registeredList/index.html#:~:text=Batch%20%2D%201971-,Er.%20A%20Surya%20Rao,-1971%20%2D%20Mechanical">Mr. A Surya Rao</a></td>
+            <td>1971</td>
+            <td>Mech</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="https://abgec.in/meet2022/registeredList/index.html#:~:text=Senior%20Consultant%2C%20CECON-,Mr.%20P%20C%20Kumbhaj,-1971%20%2D%20Electrical">Mr. P C Kumbhaj</a></td>
+            <td>1971</td>
+            <td>Elect</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="https://abgec.in/meet2022/registeredList/index.html#:~:text=Mr.%20Shravan%20Kumar%20Chaturvedi">Mr. Shravan Kumar Chaturvedi</a></td>
+            <td>1971</td>
+            <td>Mech</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="#MadhukarMendhekar">Mr. Madhukar Mendhekar</a></td>
+            <td>1972</td>
+            <td>Mech</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="#ArvindDua">Mr. Arvind Dua</a></td>
+            <td>1972</td>
+            <td>Mech</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="#HanshChandra">Mr. Hansh Chandra</a></td>
+            <td>1974</td>
+            <td>Civil</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="#GopalChandraMukherjee">Mr. Gopal Chandra Mukherjee</a></td>
+            <td>1976</td>
+            <td>Elect</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="#TavinderpalSinghArora">Mr. Tavinderpal Singh Arora</a></td>
+            <td>1977</td>
+            <td>Mech</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="#ArvindShukla">Mr. Arvind Shukla</a></td>
+            <td>1977</td>
+            <td>Electrical</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="#RajkumarAgrawal">Mr. Rajkumar Agrawal</a></td>
+            <td>1977</td>
+            <td>Mech</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="#GovindKumarSharma">Mr. Govind Kumar Sharma</a></td>
+            <td>1977</td>
+            <td>Civil</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><a href="#KedarnathSastrySusaria">Mr. Kedarnath Sastry Susaria</a></td>
+            <td>1977</td>
+            <td>Elect</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><a href="#AnilKumarVyas">Mr. Anil Kumar Vyas</a></td>
+            <td>1977</td>
+            <td>Civil</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><a href="#PradeepChoudary">Mr. Pradeep Choudary</a></td>
+            <td>1978</td>
+            <td>Elect</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><a href="#RajnikantAwasthi">Mr. Rajnikant Awasthi</a></td>
+            <td>1979</td>
+            <td>Elect</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><a href="#JyotirmayArya">Mr. Jyotirmay Arya</a></td>
+            <td>1979</td>
+            <td>Mech</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><a href="#DVSatyanarayana">Mr. D.V. Satyanarayana</a></td>
+            <td>1979</td>
+            <td>Elect</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><a href="#LinalaSivaSankaraRao">Mr. Lin ala Siva Sankara Rao</a></td>
+            <td>1979</td>
+            <td>Elect</td>
+        </tr>
+        
+        <tr>
+          <td>23</td>
+          <td><a href="#PrafullKumarKhare">Prafull Kumar Khare</a></td>
+          <td>1979</td>
+          <td>Elect</td>
+      </tr>
+      <tr>
+          <td>24</td>
+          <td><a href="#DilipThakur">Dilip Thakur</a></td>
+          <td>1979</td>
+          <td>Civil</td>
+      </tr>
+      <tr>
+          <td>25</td>
+          <td><a href="#SurendraGupta">Surendra Gupta</a></td>
+          <td>1979</td>
+          <td>Mech</td>
+      </tr>
+      <tr>
+          <td>26</td>
+          <td><a href="#DebashishNandy">Debashish Nandy</a></td>
+          <td>1979</td>
+          <td>Elect</td>
+      </tr>
+      <tr>
+          <td>27</td>
+          <td><a href="#RohltKumarShivhare">Rohlt Kumar Shivhare</a></td>
+          <td>1980</td>
+          <td>Civil</td>
+      </tr>
+      <tr>
+          <td>28</td>
+          <td><a href="#HarendraSinghDhingra">Harendra Singh Dhingra</a></td>
+          <td>1980</td>
+          <td>Civil</td>
+      </tr>
+      <tr>
+          <td>29</td>
+          <td><a href="#YogeshChandraSharma">Yogesh Chandra Sharma</a></td>
+          <td>1980</td>
+          <td>Civil</td>
+      </tr>
+      <tr>
+          <td>30</td>
+          <td><a href="#KeshariKumarSwarnakar">Keshari Kumar Swarnakar</a></td>
+          <td>1980</td>
+          <td>Mech</td>
+      </tr>
+      <tr>
+          <td>31</td>
+          <td><a href="#AsitBaranMukherjee">Asit Baran Mukherjee</a></td>
+          <td>1980</td>
+          <td>Mech</td>
+      </tr>
+      <tr>
+          <td>32</td>
+          <td><a href="#BholeShankarAgarwal">Bhole Shankar Agarwal</a></td>
+          <td>1980</td>
+          <td>Civil</td>
+      </tr>
+      <tr>
+          <td>33</td>
+          <td><a href="#ShrikantSharma">Shrikant Sharma</a></td>
+          <td>1980</td>
+          <td>Mech</td>
+      </tr>
+      <tr>
+          <td>34</td>
+          <td><a href="#AbhilashKumarDubey">Abhilash Kumar Dubey</a></td>
+          <td>1980</td>
+          <td>Mech</td>
+      </tr>
+      <tr>
+          <td>35</td>
+          <td><a href="#ArunKumarKhare">Arun Kumar Khare</a></td>
+          <td>1980</td>
+          <td>Civil</td>
+      </tr>
+      <tr>
+          <td>36</td>
+          <td><a href="#VKShukla">V K Shukla</a></td>
+          <td>1980</td>
+          <td>Civil</td>
+      </tr>
+      <tr>
+          <td>37</td>
+          <td><a href="#NirmalMatharu">Nirmal Matharu</a></td>
+          <td>1980</td>
+          <td>Mech</td>
+      </tr>
+      <tr>
+          <td>38</td>
+          <td><a href="#UttamchandLal">Uttamchand Lal</a></td>
+          <td>1980</td>
+          <td>Mech</td>
+      </tr>
+      <tr>
+          <td>39</td>
+          <td><a href="#AnilGopalRane">Anil Gopal Rane</a></td>
+          <td>1980</td>
+          <td>Mech</td>
+      </tr>
+      <tr>
+          <td>40</td>
+          <td><a href="#SushilKumarSinha">Sushil Kumar Sinha</a></td>
+          <td>1981</td>
+          <td>Mech</td>
+      </tr>
+      
+      <tr>
+        <td>41</td>
+        <td><a href="#DrBSChawla">Dr. B S Chawla</a></td>
+        <td>1981</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>42</td>
+        <td><a href="#MrsRinkuDas">Mrs. Rinku Das</a></td>
+        <td>1981</td>
+        <td>Elect</td>
+    </tr>
+    <tr>
+        <td>43</td>
+        <td><a href="#PradeepSharma">Pradeep Sharma</a></td>
+        <td>1981</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>44</td>
+        <td><a href="#NarendraJain">Narendra Jain</a></td>
+        <td>1981</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td><a href="#NarendraRaoMurari">Narendra Rao Murari</a></td>
+        <td>1981</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>46</td>
+        <td><a href="#PradeepKumarSharma">Pradeep Kumar Sharma</a></td>
+        <td>1981</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>47</td>
+        <td><a href="#ShantanuPal">Shantanu Pal</a></td>
+        <td>1982</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>48</td>
+        <td><a href="#SudheerGupta">Sudheer Gupta</a></td>
+        <td>1982</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>49</td>
+        <td><a href="#SoumenPanda">Soumen Panda</a></td>
+        <td>1982</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td><a href="#PrakashKumarChakhiAr">Prakash Kumar Chakhi ar</a></td>
+        <td>1982</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>51</td>
+        <td><a href="#PNSahu">P N Sahu</a></td>
+        <td>1982</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>52</td>
+        <td><a href="#ArunKuNigam">Arun Ku Nigam</a></td>
+        <td>1982</td>
+        <td>Elect</td>
+    </tr>
+    <tr>
+        <td>53</td>
+        <td><a href="#SanjeevBeohar">Sanjeev Beohar</a></td>
+        <td>1982</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>54</td>
+        <td><a href="#RameswarPrasadPatel">Rameswar Prasad Patel</a></td>
+        <td>1982</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>55</td>
+        <td><a href="#SheshNaraanShukla">Shesh Nara an Shukla</a></td>
+        <td>1982</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>56</td>
+        <td><a href="#PremPrakashKhare">Prem Prakash Khare</a></td>
+        <td>1982</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>57</td>
+        <td><a href="#VijaKumarKhare">Vija Kumar Khare</a></td>
+        <td>1982</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>58</td>
+        <td><a href="#NKChatterjee">N K Chatterjee</a></td>
+        <td>1982</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>59</td>
+        <td><a href="#MahendraKumarMishra">Mahendra Kumar Mishra</a></td>
+        <td>1982</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>60</td>
+        <td><a href="#ChandrashekharVithalkar">Chandrashekhar Vithalkar</a></td>
+        <td>1982</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>61</td>
+        <td><a href="#ArunSinghThakur">Arun Singh Thakur</a></td>
+        <td>1983</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>62</td>
+        <td><a href="#RajuAnthony">Raju Anthony</a></td>
+        <td>1983</td>
+        <td>Mech</td>
+    </tr>
+    <tr>
+        <td>63</td>
+        <td><a href="#SyedVilayatullah">Syed Vilayatullah</a></td>
+        <td>1983</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>64</td>
+        <td><a href="#DulichandAgarwal">Dulichand Agarwal</a></td>
+        <td>1983</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>65</td>
+        <td><a href="#VDDeewan">V D Deewan</a></td>
+        <td>1983</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>66</td>
+        <td><a href="#PradipGadkari">Pradip Gadkari</a></td>
+        <td>1983</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>67</td>
+        <td><a href="#KailashChandraAgarwal">Kailash Chandra Agarwal</a></td>
+        <td>1983</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>68</td>
+        <td><a href="#WingCommanderASrinivasRao">Wing Commander A Srinivas Rao</a></td>
+        <td>1983</td>
+        <td>Elect</td>
+    </tr>
+    <tr>
+        <td>69</td>
+        <td><a href="#SudeepKumarBanerjee">Sudeep Kumar Banerjee</a></td>
+        <td>1984</td>
+        <td>Civil</td>
+    </tr>
+    <tr>
+        <td>70</td>
+        <td><a href="#SanjeevJain">Sanjeev Jain</a></td>
+        <td>1984</td>
+        <td>Mech</td>
+    </tr>
+    
+    <tr>
+      <td>71</td>
+      <td><a href="#bharatbhushan">Bharatbhushan Tiwari</a></td>
+      <td>1984</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>72</td>
+      <td><a href="#mita">Mita Choudhary</a></td>
+      <td>1984</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>73</td>
+      <td><a href="#jaibhan">Jaibhan Singh Rathore</a></td>
+      <td>1984</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>74</td>
+      <td><a href="#sana">Sana Sharma</a></td>
+      <td>1985</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>75</td>
+      <td><a href="#narayan">Narayan Bannatwala</a></td>
+      <td>1985</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>76</td>
+      <td><a href="#alok">Alok Shirvastava</a></td>
+      <td>1986</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>77</td>
+      <td><a href="#td">T D Sandilya</a></td>
+      <td>1986</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>78</td>
+      <td><a href="#budhram">Mr. Budhram Agrawal</a></td>
+      <td>1986</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>79</td>
+      <td><a href="#sanjay">Mj Sanjay Sharma</a></td>
+      <td>1986</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>80</td>
+      <td><a href="#samta">Samta Shrivastava</a></td>
+      <td>1986</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>81</td>
+      <td><a href="#jageshwar">Jageshwar Ram Bhagat</a></td>
+      <td>1986</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>82</td>
+      <td><a href="#roop">Roop Kumar Gendiey</a></td>
+      <td>1986</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>83</td>
+      <td><a href="#sandeep">Sandeep Agrawal</a></td>
+      <td>1987</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>84</td>
+      <td><a href="#arjun">Arjun Kurrey</a></td>
+      <td>1987</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>85</td>
+      <td><a href="#y">Y Srinivas</a></td>
+      <td>1988</td>
+      <td>Elect</td>
+  </tr>
+  <tr>
+      <td>86</td>
+      <td><a href="#manish">Manish Sharma</a></td>
+      <td>1990</td>
+      <td>Elect</td>
+  </tr>
+  <tr>
+      <td>87</td>
+      <td><a href="#usha">P Usha</a></td>
+      <td>1990</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>88</td>
+      <td><a href="#deeptimati">Deeptimati Shukla</a></td>
+      <td>1990</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>89</td>
+      <td><a href="#gaura">Gaura Shukla</a></td>
+      <td>1990</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>90</td>
+      <td><a href="#pandey">M M Pandey</a></td>
+      <td>1990</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>91</td>
+      <td><a href="#dushyant">Dushyant Manohar Karlekar</a></td>
+      <td>1991</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>92</td>
+      <td><a href="#sanoj">Sanoj Kumar</a></td>
+      <td>1991</td>
+      <td>Mining</td>
+  </tr>
+  <tr>
+      <td>93</td>
+      <td><a href="#sant">Sant Kumar Netam</a></td>
+      <td>1991</td>
+      <td>Elect</td>
+  </tr>
+  <tr>
+      <td>94</td>
+      <td><a href="#lochan">Lochan Singh Naik</a></td>
+      <td>1991</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>95</td>
+      <td><a href="#umesh">Umesh Shrivastava</a></td>
+      <td>1992</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>96</td>
+      <td><a href="#gopal">Gopal Singh Thakur</a></td>
+      <td>1992</td>
+      <td>Civil</td>
+  </tr>
+  <tr>
+      <td>97</td>
+      <td><a href="#lipika">Lipika Mitra</a></td>
+      <td>1992</td>
+      <td>Elect</td>
+  </tr>
+  <tr>
+      <td>98</td>
+      <td><a href="#cp">C P Dewangan</a></td>
+      <td>1992</td>
+      <td>Mech</td>
+  </tr>
+  <tr>
+      <td>99</td>
+      <td><a href="#rajendra">Rajendra Prasad</a></td>
+      <td>1992</td>
+      <td>Elect</td>
+  </tr>
+  <tr>
+      <td>100</td>
+      <td><a href="#gouri">Gouri Shanker Prasad</a></td>
+      <td>1992</td>
+      <td>Elect</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td><a href="#101">Dharmendra Sharma</a></td>
+    <td>1992</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>102</td>
+    <td><a href="#102">Rajneesh Tiwari</a></td>
+    <td>1992</td>
+    <td>Elect</td>
+</tr>
+<tr>
+    <td>103</td>
+    <td><a href="#103">Girdhar Prasad Agrawal</a></td>
+    <td>1992</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>104</td>
+    <td><a href="#104">Manyank Singh</a></td>
+    <td>1992</td>
+    <td>Elect</td>
+</tr>
+<tr>
+    <td>105</td>
+    <td><a href="#105">KBV Sree Ramakrishna</a></td>
+    <td>1992</td>
+    <td>Elec</td>
+</tr>
+<tr>
+    <td>106</td>
+    <td><a href="#106">Deepak K Vishwakarma</a></td>
+    <td>1992</td>
+    <td>Elec</td>
+</tr>
+<tr>
+    <td>107</td>
+    <td><a href="#107">M S Rama Mohan</a></td>
+    <td>1993</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>108</td>
+    <td><a href="#108">Anupam Tiwari</a></td>
+    <td>1993</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>109</td>
+    <td><a href="#109">Santosh Kediya</a></td>
+    <td>1993</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>110</td>
+    <td><a href="#110">Santosh Kumar Shukla</a></td>
+    <td>1993</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>111</td>
+    <td><a href="#111">Raghunath Suryawanshi</a></td>
+    <td>1993</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>112</td>
+    <td><a href="#112">Ajay Shtivastava</a></td>
+    <td>1993</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>113</td>
+    <td><a href="#113">Mohd Zuber Ansari</a></td>
+    <td>1993</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>114</td>
+    <td><a href="#114">Shreyansh Agrawal</a></td>
+    <td>1993</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>115</td>
+    <td><a href="#115">Brijesh Kumar Gupta</a></td>
+    <td>1993</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>116</td>
+    <td><a href="#116">Ramakant Sahu</a></td>
+    <td>1993</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>117</td>
+    <td><a href="#117">Dr Rajeev Ain</a></td>
+    <td>1993</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>118</td>
+    <td><a href="#118">Navin Khanduja</a></td>
+    <td>1993</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>119</td>
+    <td><a href="#119">M P Pathak</a></td>
+    <td>1993</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>120</td>
+    <td><a href="#120">Mr. Anura Shukla</a></td>
+    <td>1995</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>121</td>
+    <td><a href="#121">Sandeep Shirvastava (NC)</a></td>
+    <td>1995</td>
+    <td>Mining</td>
+</tr>
+<tr>
+    <td>122</td>
+    <td><a href="#122">Vikram Shirmal</a></td>
+    <td>1995</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>123</td>
+    <td><a href="#123">Prashant Jain</a></td>
+    <td>1995</td>
+    <td>Elect</td>
+</tr>
+<tr>
+    <td>124</td>
+    <td><a href="#124">Devesh Kumar Pandey</a></td>
+    <td>1995</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>125</td>
+    <td><a href="#125">Sanjay Kumar Gupta</a></td>
+    <td>1995</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>126</td>
+    <td><a href="#126">Murlidhar Gidwani</a></td>
+    <td>1995</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>127</td>
+    <td><a href="#127">Raesh Modi</a></td>
+    <td>1996</td>
+    <td>Mech</td>
+</tr>
+<tr>
+    <td>128</td>
+    <td><a href="#128">Rakesh Kumar Vyas</a></td>
+    <td>1996</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>129</td>
+    <td><a href="#129">Syed Akil Ahmed</a></td>
+    <td>1996</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>130</td>
+    <td><a href="#130">Sana Motwani</a></td>
+    <td>1996</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>131</td>
+    <td><a href="#131">Atul Gandhe</a></td>
+    <td>1997</td>
+    <td>MIN</td>
+</tr>
+<tr>
+    <td>132</td>
+    <td><a href="#132">Prabhat Mittal</a></td>
+    <td>1997</td>
+    <td>Mining</td>
+</tr>
+<tr>
+    <td>133</td>
+    <td><a href="#133">Kamal Salua</a></td>
+    <td>1997</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>134</td>
+    <td><a href="#134">Navneet Pandey</a></td>
+    <td>1997</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>135</td>
+    <td><a href="#135">Sudeep Mishra</a></td>
+    <td>1997</td>
+    <td>Civil</td>
+</tr>
+<tr>
+    <td>136</td>
+    <td><a href="#136">Vivek Kumar Shrivastava</a></td>
+    <td>1997</td>
+    <td>Mech</td>
+</tr>
+
+<tr>
+  <td>137</td>
+  <td><a href="#PramodKinker">Pramod Kinker</a></td>
+  <td>1997</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>138</td>
+  <td><a href="#SKSahu">S K Sahu</a></td>
+  <td>1997</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>139</td>
+  <td><a href="#MayankSrivastava">Mayank Srivastava</a></td>
+  <td>1998</td>
+  <td>Minin</td>
+</tr>
+<tr>
+  <td>140</td>
+  <td><a href="#AmitKumarKedia">Amit Kumar Kedia</a></td>
+  <td>1998</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>141</td>
+  <td><a href="#MadhuKumarChandra">Madhu Kumar Chandra</a></td>
+  <td>1998</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>142</td>
+  <td><a href="#DeveshTikariha">Devesh Tikariha</a></td>
+  <td>1998</td>
+  <td>Elect</td>
+</tr>
+<tr>
+  <td>143</td>
+  <td><a href="#HarishKumarSao">Harish Kumar Sao</a></td>
+  <td>1998</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>144</td>
+  <td><a href="#LaxmiKantKashyap">Laxmi Kant Kashyap</a></td>
+  <td>1998</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>145</td>
+  <td><a href="#RajendraKumarTanwar">Rajendra Kumar Tanwar</a></td>
+  <td>1998</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>146</td>
+  <td><a href="#ManojKumarSahu">MANOJ KUMAR SAHU</a></td>
+  <td>1998</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>147</td>
+  <td><a href="#SureshGande">Suresh Gande</a></td>
+  <td>1999</td>
+  <td>Elect</td>
+</tr>
+<tr>
+  <td>148</td>
+  <td><a href="#RavinderPalSinghUbeja">Ravinder Pal Singh Ubeja</a></td>
+  <td>1999</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>149</td>
+  <td><a href="#JohnyScaria">Johny Scaria</a></td>
+  <td>1999</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>150</td>
+  <td><a href="#LaiitKumar">Laiit Kumar</a></td>
+  <td>1999</td>
+  <td>Elect</td>
+</tr>
+<tr>
+  <td>151</td>
+  <td><a href="#HarshKumarVerma">Harsh Kumar Verma</a></td>
+  <td>1999</td>
+  <td>Minin</td>
+</tr>
+<tr>
+  <td>152</td>
+  <td><a href="#RakeshDube">Rakesh Dube</a></td>
+  <td>1999</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>153</td>
+  <td><a href="#LakshmikantSinghRathore">Lakshmikant Singh Rathore</a></td>
+  <td>2000</td>
+  <td>Elect</td>
+</tr>
+<tr>
+  <td>154</td>
+  <td><a href="#ShrikantM">Shrikant M</a></td>
+  <td>2000</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>155</td>
+  <td><a href="#KaushlendraDubey">Kaushlendra Dubey</a></td>
+  <td>2000</td>
+  <td>Mining</td>
+</tr>
+<tr>
+  <td>156</td>
+  <td><a href="#RameshKumarVerma">Ramesh Kumar Verma</a></td>
+  <td>2000</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>157</td>
+  <td><a href="#AlitChandra">Alit Chandra</a></td>
+  <td>2000</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>158</td>
+  <td><a href="#KomaiKishorPaikra">Komai Kishor Paikra</a></td>
+  <td>2000</td>
+  <td>Elect</td>
+</tr>
+<tr>
+  <td>159</td>
+  <td><a href="#ArvindKumarRai">Arvind Kumar Rai</a></td>
+  <td>2001</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>160</td>
+  <td><a href="#SanjeevKumarSoni">Sanjeev Kumar Soni</a></td>
+  <td>2001</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>161</td>
+  <td><a href="#PranayRoy">Pranay Roy</a></td>
+  <td>2004</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>162</td>
+  <td><a href="#SmtPriyankaMehta">Smt. Priyanka Mehta</a></td>
+  <td>2004</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>163</td>
+  <td><a href="#SunilNamdeo">Sunil Namdeo</a></td>
+  <td>2005</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>164</td>
+  <td><a href="#AjayKumarEkka">Ajay Kumar Ekka</a></td>
+  <td>2005</td>
+  <td>Civil</td>
+</tr>
+<tr>
+  <td>165</td>
+  <td><a href="#VikasMisra">Vikas Misra</a></td>
+  <td>2005</td>
+  <td>ET&amp;T</td>
+</tr>
+<tr>
+  <td>166</td>
+  <td><a href="#AbhimanuKashyap">Abhimanu Kashyap</a></td>
+  <td>2006</td>
+  <td>Elect</td>
+</tr>
+<tr>
+  <td>167</td>
+  <td><a href="#VedRakashDewangan">Ved Rakash Dewangan</a></td>
+  <td>2006</td>
+  <td>Mining</td>
+</tr>
+<tr>
+  <td>168</td>
+  <td><a href="#KameshwarPrasadSinHraul">Kameshwar Prasad Sinhraul</a></td>
+  <td>2006</td>
+  <td>Minin</td>
+</tr>
+<tr>
+  <td>169</td>
+  <td><a href="#NeelimaKaushik">Neelima Kaushik</a></td>
+  <td>2008</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>170</td>
+  <td><a href="#RahulJain">Rahul Jain</a></td>
+  <td>2008</td>
+  <td>Mech</td>
+</tr>
+<tr>
+  <td>171</td>
+  <td><a href="#AbhishekShrivastava">Abhishek Shrivastava</a></td>
+  <td>2009</td>
+  <td>IT</td>
+</tr>
+<tr>
+  <td>172</td>
+  <td><a href="#AtulVaishnaw">Atul Vaishnaw</a></td>
+  <td>2013</td>
+  <td>IT</td>
+</tr>
+<tr>
+  <td>173</td>
+  <td><a href="#ParulThakur">Parul Thakur</a></td>
+  <td>2013</td>
+  <td>IT</td>
+</tr>
+          <tr>
+            <td>174</td>
+            <td><a href="">Pradeep Sahu</a></td>
+            <td>2014</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>175</td>
+            <td><a href="">Kritika Agarwal</a></td>
+            <td>2015</td>
+            <td>Mech</td>
+          </tr>
+          <tr>
+            <td>176</td>
+            <td><a href="">Harish kaushik</a></td>
+            <td>2015</td>
+            <td>Mech</td>
+          </tr>
+        </tbody>
+      </table>
+      <script>
+        function searchByName() {
+    const searchInput = document.getElementById("search-input");
+    const searchTerm = searchInput.value.toLowerCase();
+    const rows = document.querySelectorAll("tbody tr");
+
+    for (const row of rows) {
+        const nameCell = row.cells[1];
+        const name = nameCell.textContent.toLowerCase();
+        if (name.includes(searchTerm)) {
+            row.style.display = "table-row";
+        } else {
+            row.style.display = "none";   
+        }
+    }
+}
+
+function sortBatches() {
+    const rows = document.querySelectorAll("tbody tr");
+    let currentGroup = null;
+
+    rows.forEach(row => {
+        const rowBatch = row.cells[2].textContent.trim();
+        if (rowBatch !== currentGroup) {
+            const groupHeader = document.createElement("tr");
+            groupHeader.className = "group-header";
+            groupHeader.innerHTML = `<td><span>${rowBatch}</span></td><td colspan="3"></td>`;
+            row.parentNode.insertBefore(groupHeader, row);
+            currentGroup = rowBatch;
+        }
+    });
+}
+
+window.onload = sortBatches;
+
+document.getElementById("myTable").addEventListener("click", function (event) {
+    if (event.target.tagName === "H3" && event.target.cellIndex === 1) { // Ensure the clicked cell is the name cell
+        const name = event.target.textContent.trim();
+        // Construct the URL for redirection
+        const baseUrl = "https://abgec.in/meet2022/registeredList/index.html?name=";
+        window.location.href = baseUrl + encodeURIComponent(name); // Redirect with encoded name
+    }
+});
+</script>
+</body>
+</html>
