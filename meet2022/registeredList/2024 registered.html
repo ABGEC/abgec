@@ -3,125 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alumni Meet 2024 Regsitered Members</title>
+  <title>Alumni Meet 2024 Registered Members</title>
   <style>
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f7;
-    color: #333;
-}
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(194, 160, 224);
+      color: #333;
+    }
 
-.center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
+    .center-container {
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(37, 3, 67);
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 20px;
+       /* Set max width */
+      margin-left: auto; /* Centering the container */
+      margin-right: auto; /* Centering the container */
+    }
 
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 30px;
-    text-align: center;
-}
+    h1 {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 2.5em;
+      margin: 0;
+    }
 
-ul {
-    
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-}
+    ul {
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      max-width: 1300px; /* Set max width for the list */
+      margin-left: auto; /* Centering the list */
+      margin-right: auto; /* Centering the list */
+    }
 
-li {
-    border: 2px solid red;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    background-color: #fff;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .batch-container {
+      margin: 20px 0;
+      padding: 10px;
+      background-color: rgb(194, 160, 224);
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    }
 
-li:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
+    .batch-header {
+      font-size: 2.5em; /* Increased font size */
+      color: rgb(255, 255, 255);
+      background-color: rgb(94, 26, 154);
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center; /* Centered header */
+      font-family: 'Times New Roman', Times, serif;
+    }
 
-img {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 50%;
-    border: 4px solid #3498db;
-    margin-right: 20px;
-    transition: transform 0.3s ease;
-}
+    li {
+      display: flex;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: larger;
+    }
 
-img:hover {
-    transform: scale(1.1);
-}
+    img {
+      width: 125px;
+      height: 140px;
+      border-radius: 50%;
+      border: 0.4rem solid rgb(94, 26, 154);
+      margin-right: 20px;
+      transition: transform 0.3s ease;
+    }
 
-li .details {
-    flex: 1;
-    display: flex;
-    flex-direction: column; /* Stacks elements vertically */
-    justify-content: center;
-}
+    .details {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; /* Allow details to grow and take space */
+    }
 
-li h2 {
-    font-size: 2em; /* Increased font size for name */
-    margin: 0 0 10px 0; /* Added margin below the name */
-    color: #2c3e50;
-}
+    .detail-item {
+      font-size: 1.5em; /* Increased font size */
+      color: rgb(5, 0, 9);
+      margin: 5px 0;
+      line-height: 1.5;
+    }
 
-li .detail-item {
-    font-size: 1.6em; /* Increased font size for individual details */
-    color: #34495e;
-    margin: 5px 0; /* Adds space between each line */
-    line-height: 1.8;
-}
+    .title-name {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 1.5em; /* Increased font size */
+    }
 
-li .button-container {
-    margin-top: 15px;
-}
+    .title-name .title {
+      font-weight: bold;
+      color: rgb(2, 0, 4);
+    }
 
-button {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em; /* Increased button font size */
-    transition: background-color 0.3s ease;
-}
+    .title-name .name {
+      color: #050000;
+    }
 
-button:hover {
-    background-color: #2980b9;
-}
+    button {
+      padding: 10px 20px;
+      background-color: orchid;
+      color: orchid;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-top: 10px;
+    }
 
+    button:hover {
+      background-color: darkorchid;
+      transform: scale(1.05);
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        padding: 10px;
+      }
+
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5%;
+      }
+
+      img {
+        width: 95px;
+        height: 105px;
+      }
+
+      .batch-header {
+        font-size: 1.5em;
+      }
+
+      .title-name {
+        font-size: 1.2em; /* Adjusted for smaller screens */
+      }
+
+      .detail-item {
+        font-size: 1em;
+      }
+
+      button {
+        font-size: 1em;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="center-container">
-  <h1>Alumni Meet 2024 Regsitered Members</h1></div>
+    <h1>Alumni Meet 2024 Registered Members</h1>
+  </div>
   <ul class="dataList" id="dataList"></ul>
 
   <script>
-    // Wait for the DOM to fully load
     document.addEventListener('DOMContentLoaded', function() {
       const apiUrl = 'https://script.google.com/macros/s/AKfycbzXoCHGNxmUjcCKfAyOAUjkqRlIUhxBCEs08NaL9i05CNAxAF92tB_6l_qbR6xw5f3gwg/exec';
 
-      // Fetch data from the API
       fetch(apiUrl)
         .then(response => {
           if (!response.ok) {
@@ -131,26 +185,55 @@ button:hover {
         })
         .then(data => {
           const dataList = document.getElementById('dataList');
+          const batches = {};
 
+          // Organize data by passout year
           data.data.forEach(item => {
-            const listItem = document.createElement('li');
+            const year = item.PassoutYear;
 
-            // Remove '&export=download' from ImageURL
-            const imageURL = item.ImageURL.replace('&export=download', '');
-            const imageID = extractFileIDFromURL(imageURL);
-            const newImageURL = `https://drive.google.com/thumbnail?id=${imageID}`;
-
-            // Create the HTML content for the list item
-            listItem.innerHTML = `
-              <img src="${newImageURL}" alt="Image"><br>
-              <strong>Title:</strong> ${item.Title}<br>
-              <strong>Name:</strong> ${item.Name}<br>
-              <strong>Passout Year:</strong> ${item.PassoutYear}<br>
-              <strong>Branch:</strong> ${item.Branch}<br>
-            `;
-
-            dataList.appendChild(listItem);
+            if (!batches[year]) {
+              batches[year] = [];
+            }
+            batches[year].push(item);
           });
+
+          // Sort the keys (passout years) in descending order
+          // Sort the keys (passout years) in ascending order
+const sortedYears = Object.keys(batches).sort((a, b) => parseInt(a) - parseInt(b));
+
+sortedYears.forEach(year => {
+  const batchContainer = document.createElement('div');
+  batchContainer.className = 'batch-container';
+  batchContainer.innerHTML = `<div class="batch-header">Batch: ${year}</div>`;
+
+  const batchList = document.createElement('ul');
+
+  batches[year].forEach(item => {
+    const listItem = document.createElement('li');
+
+    const imageURL = item.ImageURL.replace('&export=download', '');
+    const imageID = extractFileIDFromURL(imageURL);
+    const newImageURL = `https://drive.google.com/thumbnail?id=${imageID}`;
+
+    listItem.innerHTML = `
+      <img src="${newImageURL}" alt="Image">
+      <div class="details">
+        <div class="title-name">
+          <span class="title">${item.Title}</span>
+          <span class="name">${item.Name}</span>
+        </div>
+        <span class="detail-item" style="font-size:20px;"><strong>Branch:</strong> ${item.Branch}</span>
+        <span class="detail-item" style="font-size:20px;"><strong>Batch:</strong> ${year}</span>
+      </div>
+    `;
+
+    batchList.appendChild(listItem);
+  });
+
+  batchContainer.appendChild(batchList);
+  dataList.appendChild(batchContainer);
+});
+
         })
         .catch(error => {
           console.error('Error fetching data:', error);
@@ -160,11 +243,6 @@ button:hover {
         });
     });
 
-    /**
-     * Extracts the file ID from a Google Drive URL.
-     * @param {string} url - The URL to extract the file ID from.
-     * @return {string} - The extracted file ID.
-     */
     function extractFileIDFromURL(url) {
       const urlObj = new URL(url);
       return urlObj.searchParams.get('id');
