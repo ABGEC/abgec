@@ -80,7 +80,7 @@
       border: 0.4rem solid rgb(94, 26, 154);
       margin-right: 20px;
       transition: transform 0.3s ease;
-      margin-left: 30px;
+      margin-left: 20px;
     }
 
     .details {
@@ -90,7 +90,7 @@
     }
 
     .detail-item {
-      font-size: 1.5em; /* Increased font size */
+      font-size: 1.3em; /* Increased font size */
       color: rgb(5, 0, 9);
       margin: 5px 0;
       line-height: 1.5;
@@ -100,7 +100,7 @@
       display: flex;
       align-items: baseline;
       gap: 8px;
-      font-size: 1.5em; /* Increased font size */
+      font-size: 1.3em; /* Increased font size */
     }
 
     .title-name .title {
@@ -158,15 +158,15 @@
       }
 
       .title-name {
-        font-size: 1.2em; /* Adjusted for smaller screens */
+        font-size: 1rem; /* Adjusted for smaller screens */
       }
 
       .detail-item {
-        font-size: 1em;
+        font-size: 1rem;
       }
 
       button {
-        font-size: 1em;
+        font-size: 1rem;
       }
     }
   </style>
@@ -227,8 +227,8 @@ sortedYears.forEach(year => {
           <span class="title">${item.Title}</span>
           <span class="name">${item.Name}</span>
         </div>
-        <span class="detail-item" style="font-size:20px;"><strong>Branch:</strong> ${item.Branch}</span>
-        <span class="detail-item" style="font-size:20px;"><strong>Batch:</strong> ${year}</span>
+        <span class="detail-item"><strong>Branch:</strong> ${item.Branch}</span>
+        <span class="detail-item"><strong>Batch:</strong> ${year}</span>
       </div>
     `;
 
